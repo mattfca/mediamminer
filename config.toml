@@ -1,0 +1,29 @@
+[worker]
+name="mediaminer1" # name of your rig, will be used as the worker name
+
+[output]
+mediaminer=true # this will output mediaminer details, simple data parsed from the miner
+miner=true # set to true to show output from miner executable
+
+[miningpoolhub]
+username="mediafraze" # your mph account name
+  [miningpoolhub.ports]
+    equihash_auto=17023
+    equihash_zencash=20594
+    equihash_zclassic=20575
+    equihash_bitcoingold=20595
+    equihash_zcash=20570
+  [miningpoolhub.servers]
+    equihash="us-east.equihash-hub.miningpoolhub.com"
+
+[hodlpool]
+  ubiq_port=8009
+  ubiq_server="ubiq.hodlpool.com"
+
+[wallets]
+  ubiq="0xEa2b941B32da24B4Fa99ef2578d1DF50C26dA523"
+
+[API]
+post=true # set to true if you want to post mining details
+servers=['http://localhost:3030/post'] # default server is mediaminer, you can add your own!
+

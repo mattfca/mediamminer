@@ -1,0 +1,49 @@
+14:20:53:019	360	Check and remove old log files...
+14:20:53:024	360	args:  -epool ubiq.hodlpool.com:8009 -ewal 0xEa2b941B32da24B4Fa99ef2578d1DF50C26dA523 -eworker mediaminer1 -epsw x -esm 0 -allcoins 1 
+14:20:53:026	360	
+14:20:53:029	360	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+14:20:53:031	360	บ     Claymore's Dual ETH + DCR/SC/LBC/PASC GPU Miner v10.2      บ
+14:20:53:034	360	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+14:20:53:037	360	
+14:20:53:240	360	ETH: 1 pool is specified
+14:20:53:243	360	Main Ethereum pool is ubiq.hodlpool.com:8009
+14:20:53:245	360	DCR: 0 pool is specified
+14:20:53:283	360	OpenCL platform: NVIDIA CUDA
+14:20:53:286	360	AMD OpenCL platform not found 
+14:20:53:454	360	CUDA initializing...
+
+14:20:53:457	360	NVIDIA Cards available: 1 
+14:20:53:461	360	CUDA Driver Version/Runtime Version: 9.1/8.0
+14:20:53:466	360	GPU #0: GeForce GTX 980 Ti, 6144 MB available, 22 compute units, capability: 5.2
+
+14:20:53:469	360	Total cards: 1 
+14:20:57:507	360	No AMD cards in the list, ADL library will not be used.
+14:20:57:513	360	NVML version: 9.388.13
+14:20:57:627	51f0	ETH: Stratum - connecting to 'ubiq.hodlpool.com' <158.69.248.48> port 8009
+14:20:57:711	51f0	send: {"worker": "mediaminer1", "jsonrpc": "2.0", "params": ["0xEa2b941B32da24B4Fa99ef2578d1DF50C26dA523", "x"], "id": 2, "method": "eth_submitLogin"}
+
+14:20:57:714	51f0	ETH: Stratum - Connected (ubiq.hodlpool.com:8009)
+14:20:57:719	360	No pool specified for Decred! Ethereum-only mining mode is enabled
+14:20:57:723	360	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+14:20:57:726	360	ETH: eth-proxy stratum mode
+14:20:57:729	360	"-allcoins" option is set, default pools will be used for devfee, check "Readme" file for details.
+14:20:57:733	360	Watchdog enabled
+14:20:57:738	360	Remote management (READ-ONLY MODE) is enabled on port 3333
+14:20:57:741	360	
+14:20:57:798	51f0	got 39 bytes
+14:20:57:801	51f0	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+14:20:57:805	51f0	parse packet: 38
+14:20:57:808	51f0	ETH: Authorized
+14:20:57:810	51f0	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+14:20:57:813	51f0	new buf size: 0
+14:20:57:886	51f0	got 237 bytes
+14:20:57:889	51f0	buf: {"id":3,"jsonrpc":"2.0","result":["0x5403f8a73efc935e9628e684a3dcf97a6baeb4cd016bd035b10cafb9fe2d353c","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+14:20:57:892	51f0	parse packet: 236
+14:20:57:895	51f0	ETH: job changed
+14:20:57:898	51f0	new buf size: 0
+14:20:57:926	1d68	Setting DAG epoch #11...
+14:20:58:856	1d68	Setting DAG epoch #11 for GPU0
+14:20:58:860	1d68	Create GPU buffer for GPU0

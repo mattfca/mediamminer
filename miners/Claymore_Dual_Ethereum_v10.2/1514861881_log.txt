@@ -1,0 +1,1569 @@
+18:58:01:244	dcc	Check and remove old log files...
+18:58:01:249	dcc	args: -wd 1 -r 1 -epool stratum+tcp://ubiq.hodlpool.com:8009 -ewal 0x23200382477bacc0c16bed777fc88f836b496eb6 -esm 0 -allpools 1 -mport -3333 -asm 1 -dpool stratum+tcp://hub.miningpoolhub.com:20550 -dwal mediafraze.dualtest -dcoin sia -allpools 1 
+18:58:01:252	dcc	
+18:58:01:255	dcc	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+18:58:01:257	dcc	บ     Claymore's Dual ETH + DCR/SC/LBC/PASC GPU Miner v10.2      บ
+18:58:01:260	dcc	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+18:58:01:264	dcc	
+18:58:01:473	dcc	ETH: 1 pool is specified
+18:58:01:476	dcc	Main Ethereum pool is ubiq.hodlpool.com:8009
+18:58:01:480	dcc	SC: 1 pool is specified
+18:58:01:484	dcc	Main Siacoin pool is hub.miningpoolhub.com:20550
+18:58:01:522	dcc	OpenCL platform: NVIDIA CUDA
+18:58:01:525	dcc	AMD OpenCL platform not found 
+18:58:01:699	dcc	CUDA initializing...
+
+18:58:01:702	dcc	NVIDIA Cards available: 1 
+18:58:01:704	dcc	CUDA Driver Version/Runtime Version: 9.1/8.0
+18:58:01:708	dcc	GPU #0: GeForce GTX 980 Ti, 6144 MB available, 22 compute units, capability: 5.2
+
+18:58:01:710	dcc	Total cards: 1 
+18:58:05:716	dcc	No AMD cards in the list, ADL library will not be used.
+18:58:05:727	dcc	NVML version: 9.388.13
+18:58:05:899	4f98	ETH: Stratum - connecting to 'ubiq.hodlpool.com' <158.69.248.48> port 8009
+18:58:05:939	dcc	DUAL MINING MODE ENABLED: ETHEREUM+SIACOIN
+18:58:05:942	dcc	ETH: eth-proxy stratum mode
+18:58:05:944	dcc	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+18:58:05:949	dcc	Watchdog enabled
+18:58:05:953	dcc	Remote management (READ-ONLY MODE) is enabled on port 3333
+18:58:05:956	5a58	 SC: Stratum - connecting to 'hub.miningpoolhub.com' <54.210.21.173> port 20550
+18:58:05:956	dcc	
+18:58:05:977	4f98	send: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0x23200382477bacc0c16bed777fc88f836b496eb6", ""], "id": 2, "method": "eth_submitLogin"}
+
+18:58:05:982	4f98	ETH: Stratum - Connected (ubiq.hodlpool.com:8009)
+18:58:06:048	5a58	send: {"id": 1, "method": "mining.subscribe", "params": []}
+
+18:58:06:052	5a58	send: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+18:58:06:055	5a58	send: {"id": 2, "method": "mining.authorize", "params": ["mediafraze.dualtest",""]}
+
+18:58:06:057	4f98	got 39 bytes
+18:58:06:060	5a58	 SC: Stratum - Connected (hub.miningpoolhub.com:20550)
+18:58:06:060	4f98	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+18:58:06:068	4f98	parse packet: 38
+18:58:06:070	4f98	ETH: Authorized
+18:58:06:073	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+18:58:06:077	4f98	new buf size: 0
+18:58:06:145	5a58	got 455 bytes
+18:58:06:149	5a58	buf: {"id":1,"result":[[["mining.set_difficulty","deadbeefcafebabea953020000000000"],["mining.notify","deadbeefcafebabea953020000000000"]],"600248c6",4],"error":null}
+{"id":null,"method":"mining.notify","params":["589","0x00000000000000179f48f2e9d69b7a36504e83f828d879b2f6bc8fc5eb45949d00000000000000002bf54a5a0000000007e9ce6486cb4c0f454f85dcd5adf8f692f1a1bd88b15ca083187d15e6b612f2","0x0000000012533fe68fd3d1cfe47445abdce0b117994feb3fbbe16e3d0f675ad9",true]}
+
+18:58:06:151	4f98	got 237 bytes
+18:58:06:152	5a58	parse packet: 161
+18:58:06:154	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x07ed104e19c2223eecd8a341a0c5efa52de092bfa58e817e6946cf4f7cef47fa","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+18:58:06:157	5a58	remove first packet 293
+18:58:06:160	4f98	parse packet: 236
+18:58:06:164	5a58	new buf size: 293
+18:58:06:167	4f98	ETH: job changed
+18:58:06:170	5a58	parse packet: 292
+18:58:06:172	4f98	new buf size: 0
+18:58:06:175	5a58	sc: job changed
+18:58:06:181	5a58	new buf size: 0
+18:58:06:235	5a58	got 36 bytes
+18:58:06:238	5a58	buf: {"id":2,"result":true,"error":null}
+
+18:58:06:241	5a58	parse packet: 35
+18:58:06:243	5a58	 SC: Authorized
+18:58:06:248	5a58	new buf size: 0
+18:58:06:248	744	Setting DAG epoch #11...
+18:58:07:128	744	Setting DAG epoch #11 for GPU0
+18:58:07:134	744	Create GPU buffer for GPU0
+18:58:10:000	744	GPU0 DAG creation time - 2775 ms
+18:58:10:005	744	Setting DAG epoch #11 for GPU0 done
+18:58:16:197	4f98	ETH: checking pool connection...
+18:58:16:200	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+18:58:16:271	4f98	got 237 bytes
+18:58:16:274	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x07ed104e19c2223eecd8a341a0c5efa52de092bfa58e817e6946cf4f7cef47fa","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+18:58:16:277	4f98	parse packet: 236
+18:58:16:279	4f98	ETH: job is the same
+18:58:16:282	4f98	new buf size: 0
+18:58:26:196	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf44d69", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+18:58:26:211	4f98	ETH: checking pool connection...
+18:58:26:214	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+18:58:26:269	4f98	got 39 bytes
+18:58:26:272	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+18:58:26:275	4f98	parse packet: 38
+18:58:26:277	4f98	new buf size: 0
+18:58:26:339	4f98	got 237 bytes
+18:58:26:342	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x07ed104e19c2223eecd8a341a0c5efa52de092bfa58e817e6946cf4f7cef47fa","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+18:58:26:344	4f98	parse packet: 236
+18:58:26:348	4f98	ETH: job is the same
+18:58:26:350	4f98	new buf size: 0
+18:58:31:499	48ac	GPU0 t=47C fan=51%
+18:58:31:568	4d18	em hbt: 0, dm hbt: 0, fm hbt: 31, 
+18:58:31:571	4d18	watchdog - thread 0 (gpu0), hb time 500
+18:58:31:573	4d18	watchdog - thread 1 (gpu0), hb time 234
+18:58:36:227	4f98	ETH: checking pool connection...
+18:58:36:230	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+18:58:36:300	4f98	got 237 bytes
+18:58:36:303	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x07ed104e19c2223eecd8a341a0c5efa52de092bfa58e817e6946cf4f7cef47fa","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+18:58:36:305	4f98	parse packet: 236
+18:58:36:308	4f98	ETH: job is the same
+18:58:36:311	4f98	new buf size: 0
+18:58:44:302	5a58	got 293 bytes
+18:58:44:305	5a58	buf: {"id":null,"method":"mining.notify","params":["58a","0x00000000000000179f48f2e9d69b7a36504e83f828d879b2f6bc8fc5eb45949d000000000000000062f54a5a00000000ae50ebcf3b31d24dd307dfa625e017343b7254366d91e7d664131f861f9e5050","0x0000000012533fe68fd3d1cfe47445abdce0b117994feb3fbbe16e3d0f675ad9",true]}
+
+18:58:44:308	5a58	parse packet: 292
+18:58:44:310	5a58	sc: job changed(2)
+18:58:44:313	5a58	new buf size: 0
+18:58:44:316	5a58	 SC: 01/01/18-18:58:44 - New job from hub.miningpoolhub.com:20550
+18:58:44:318	5a58	target: 0x0000000012533fe6 (diff: 60GH)
+18:58:46:212	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf4b674", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+18:58:46:242	4f98	ETH: checking pool connection...
+18:58:46:244	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+18:58:46:284	4f98	got 39 bytes
+18:58:46:287	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+18:58:46:289	4f98	parse packet: 38
+18:58:46:292	4f98	new buf size: 0
+18:58:46:351	4f98	got 237 bytes
+18:58:46:354	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x07ed104e19c2223eecd8a341a0c5efa52de092bfa58e817e6946cf4f7cef47fa","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+18:58:46:357	4f98	parse packet: 236
+18:58:46:359	4f98	ETH: job is the same
+18:58:46:363	4f98	new buf size: 0
+18:58:56:259	4f98	ETH: checking pool connection...
+18:58:56:262	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+18:58:56:334	4f98	got 237 bytes
+18:58:56:337	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x07ed104e19c2223eecd8a341a0c5efa52de092bfa58e817e6946cf4f7cef47fa","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+18:58:56:339	4f98	parse packet: 236
+18:58:56:342	4f98	ETH: job is the same
+18:58:56:345	4f98	new buf size: 0
+18:59:01:509	48ac	GPU0 t=53C fan=51%
+18:59:01:656	4d18	em hbt: 0, dm hbt: 0, fm hbt: 47, 
+18:59:01:659	4d18	watchdog - thread 0 (gpu0), hb time 375
+18:59:01:662	4d18	watchdog - thread 1 (gpu0), hb time 109
+18:59:06:228	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf51f9f", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+18:59:06:274	4f98	ETH: checking pool connection...
+18:59:06:277	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+18:59:06:298	4f98	got 39 bytes
+18:59:06:300	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+18:59:06:303	4f98	parse packet: 38
+18:59:06:306	4f98	new buf size: 0
+18:59:06:365	4f98	got 237 bytes
+18:59:06:368	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x07ed104e19c2223eecd8a341a0c5efa52de092bfa58e817e6946cf4f7cef47fa","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+18:59:06:371	4f98	parse packet: 236
+18:59:06:373	4f98	ETH: job is the same
+18:59:06:376	4f98	new buf size: 0
+18:59:16:290	4f98	ETH: checking pool connection...
+18:59:16:297	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+18:59:16:371	4f98	got 237 bytes
+18:59:16:374	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x07ed104e19c2223eecd8a341a0c5efa52de092bfa58e817e6946cf4f7cef47fa","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+18:59:16:377	4f98	parse packet: 236
+18:59:16:379	4f98	ETH: job is the same
+18:59:16:382	4f98	new buf size: 0
+18:59:26:243	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf4cae7", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+18:59:26:305	4f98	ETH: checking pool connection...
+18:59:26:308	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+18:59:26:317	4f98	got 39 bytes
+18:59:26:319	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+18:59:26:322	4f98	parse packet: 38
+18:59:26:325	4f98	new buf size: 0
+18:59:26:384	4f98	got 237 bytes
+18:59:26:387	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x07ed104e19c2223eecd8a341a0c5efa52de092bfa58e817e6946cf4f7cef47fa","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+18:59:26:392	4f98	parse packet: 236
+18:59:26:396	4f98	ETH: job is the same
+18:59:26:400	4f98	new buf size: 0
+18:59:31:518	48ac	GPU0 t=56C fan=51%
+18:59:31:745	4d18	em hbt: 0, dm hbt: 0, fm hbt: 63, 
+18:59:31:748	4d18	watchdog - thread 0 (gpu0), hb time 250
+18:59:31:750	4d18	watchdog - thread 1 (gpu0), hb time 516
+18:59:36:321	4f98	ETH: checking pool connection...
+18:59:36:325	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+18:59:36:397	4f98	got 237 bytes
+18:59:36:400	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x07ed104e19c2223eecd8a341a0c5efa52de092bfa58e817e6946cf4f7cef47fa","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+18:59:36:403	4f98	parse packet: 236
+18:59:36:406	4f98	ETH: job is the same
+18:59:36:409	4f98	new buf size: 0
+18:59:37:421	4f98	got 237 bytes
+18:59:37:425	4f98	buf: {"id":0,"jsonrpc":"2.0","result":["0xd966344f8961cc190e6a5e2b7d7996373bf60b7f7933fe1dec588c45fe67f973","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+18:59:37:430	4f98	parse packet: 236
+18:59:37:435	4f98	ETH: job changed
+18:59:37:440	4f98	new buf size: 0
+18:59:37:443	4f98	ETH: 01/01/18-18:59:37 - New job from ubiq.hodlpool.com:8009
+18:59:37:446	4f98	target: 0x0000000112e0be82 (diff: 4000MH), epoch 11(1.09GB)
+18:59:37:449	4f98	ETH - Total Speed: 16.036 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:01
+18:59:37:452	4f98	ETH: GPU0 16.036 Mh/s
+18:59:37:455	4f98	 SC - Total Speed: 160.356 Mh/s, Total Shares: 0, Rejected: 0
+18:59:37:458	4f98	 SC: GPU0 160.356 Mh/s
+18:59:39:613	5a58	got 293 bytes
+18:59:39:616	5a58	buf: {"id":null,"method":"mining.notify","params":["58b","0x00000000000000179f48f2e9d69b7a36504e83f828d879b2f6bc8fc5eb45949d000000000000000099f54a5a000000009b7df1d619e8c0ef0a13c0545d060a71c9ae7929259ac657d7a3ac2492a624bb","0x0000000012533fe68fd3d1cfe47445abdce0b117994feb3fbbe16e3d0f675ad9",true]}
+
+18:59:39:619	5a58	parse packet: 292
+18:59:39:623	5a58	sc: job changed(2)
+18:59:39:626	5a58	new buf size: 0
+18:59:39:629	5a58	 SC: 01/01/18-18:59:39 - New job from hub.miningpoolhub.com:20550
+18:59:39:632	5a58	target: 0x0000000012533fe6 (diff: 60GH)
+18:59:46:259	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf4ec9f", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+18:59:46:329	4f98	got 39 bytes
+18:59:46:333	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+18:59:46:338	4f98	parse packet: 38
+18:59:46:342	4f98	new buf size: 0
+18:59:46:344	4f98	ETH: checking pool connection...
+18:59:46:347	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+18:59:46:431	4f98	got 237 bytes
+18:59:46:434	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xd966344f8961cc190e6a5e2b7d7996373bf60b7f7933fe1dec588c45fe67f973","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+18:59:46:437	4f98	parse packet: 236
+18:59:46:440	4f98	ETH: job is the same
+18:59:46:442	4f98	new buf size: 0
+18:59:56:351	4f98	ETH: checking pool connection...
+18:59:56:355	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+18:59:56:426	4f98	got 237 bytes
+18:59:56:429	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xd966344f8961cc190e6a5e2b7d7996373bf60b7f7933fe1dec588c45fe67f973","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+18:59:56:432	4f98	parse packet: 236
+18:59:56:435	4f98	ETH: job is the same
+18:59:56:438	4f98	new buf size: 0
+19:00:01:526	48ac	GPU0 t=58C fan=51%
+19:00:01:833	4d18	em hbt: 0, dm hbt: 0, fm hbt: 62, 
+19:00:01:837	4d18	watchdog - thread 0 (gpu0), hb time 141
+19:00:01:840	4d18	watchdog - thread 1 (gpu0), hb time 407
+19:00:06:274	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf498bd", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:00:06:348	4f98	got 39 bytes
+19:00:06:351	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:00:06:354	4f98	parse packet: 38
+19:00:06:357	4f98	new buf size: 0
+19:00:06:367	4f98	ETH: checking pool connection...
+19:00:06:370	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:00:06:444	4f98	got 237 bytes
+19:00:06:447	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xd966344f8961cc190e6a5e2b7d7996373bf60b7f7933fe1dec588c45fe67f973","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:00:06:449	4f98	parse packet: 236
+19:00:06:452	4f98	ETH: job is the same
+19:00:06:455	4f98	new buf size: 0
+19:00:16:383	4f98	ETH: checking pool connection...
+19:00:16:386	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:00:16:458	4f98	got 237 bytes
+19:00:16:461	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xd966344f8961cc190e6a5e2b7d7996373bf60b7f7933fe1dec588c45fe67f973","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:00:16:463	4f98	parse packet: 236
+19:00:16:466	4f98	ETH: job is the same
+19:00:16:468	4f98	new buf size: 0
+19:00:26:290	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf4fc37", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:00:26:361	4f98	got 39 bytes
+19:00:26:364	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:00:26:366	4f98	parse packet: 38
+19:00:26:369	4f98	new buf size: 0
+19:00:26:399	4f98	ETH: checking pool connection...
+19:00:26:402	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:00:26:472	4f98	got 237 bytes
+19:00:26:476	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xd966344f8961cc190e6a5e2b7d7996373bf60b7f7933fe1dec588c45fe67f973","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:00:26:479	4f98	parse packet: 236
+19:00:26:481	4f98	ETH: job is the same
+19:00:26:484	4f98	new buf size: 0
+19:00:31:534	48ac	GPU0 t=60C fan=51%
+19:00:31:923	4d18	em hbt: 0, dm hbt: 0, fm hbt: 63, 
+19:00:31:928	4d18	watchdog - thread 0 (gpu0), hb time 16
+19:00:31:931	4d18	watchdog - thread 1 (gpu0), hb time 296
+19:00:35:034	5a58	got 293 bytes
+19:00:35:037	5a58	buf: {"id":null,"method":"mining.notify","params":["58c","0x00000000000000179f48f2e9d69b7a36504e83f828d879b2f6bc8fc5eb45949d0000000000000000d0f54a5a000000005559a754be4615bc47a9550c673fe60774d5da401797d3824dcf4b02d94c448a","0x0000000012533fe68fd3d1cfe47445abdce0b117994feb3fbbe16e3d0f675ad9",true]}
+
+19:00:35:040	5a58	parse packet: 292
+19:00:35:042	5a58	sc: job changed(2)
+19:00:35:045	5a58	new buf size: 0
+19:00:35:047	5a58	 SC: 01/01/18-19:00:35 - New job from hub.miningpoolhub.com:20550
+19:00:35:050	5a58	target: 0x0000000012533fe6 (diff: 60GH)
+19:00:36:415	4f98	ETH: checking pool connection...
+19:00:36:418	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:00:36:490	4f98	got 237 bytes
+19:00:36:494	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xd966344f8961cc190e6a5e2b7d7996373bf60b7f7933fe1dec588c45fe67f973","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:00:36:499	4f98	parse packet: 236
+19:00:36:503	4f98	ETH: job is the same
+19:00:36:508	4f98	new buf size: 0
+19:00:46:305	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf4ba2c", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:00:46:382	4f98	got 39 bytes
+19:00:46:385	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:00:46:388	4f98	parse packet: 38
+19:00:46:390	4f98	new buf size: 0
+19:00:46:430	4f98	ETH: checking pool connection...
+19:00:46:433	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:00:46:505	4f98	got 237 bytes
+19:00:46:508	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xd966344f8961cc190e6a5e2b7d7996373bf60b7f7933fe1dec588c45fe67f973","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:00:46:510	4f98	parse packet: 236
+19:00:46:513	4f98	ETH: job is the same
+19:00:46:516	4f98	new buf size: 0
+19:00:56:446	4f98	ETH: checking pool connection...
+19:00:56:449	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:00:56:529	4f98	got 237 bytes
+19:00:56:532	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xd966344f8961cc190e6a5e2b7d7996373bf60b7f7933fe1dec588c45fe67f973","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:00:56:535	4f98	parse packet: 236
+19:00:56:538	4f98	ETH: job is the same
+19:00:56:541	4f98	new buf size: 0
+19:01:01:646	48ac	GPU0 t=60C fan=51%
+19:01:02:014	4d18	em hbt: 0, dm hbt: 0, fm hbt: 79, 
+19:01:02:017	4d18	watchdog - thread 0 (gpu0), hb time 438
+19:01:02:020	4d18	watchdog - thread 1 (gpu0), hb time 172
+19:01:06:321	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf4ccc3", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:01:06:398	4f98	got 39 bytes
+19:01:06:401	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:01:06:403	4f98	parse packet: 38
+19:01:06:406	4f98	new buf size: 0
+19:01:06:461	4f98	ETH: checking pool connection...
+19:01:06:464	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:01:06:545	4f98	got 237 bytes
+19:01:06:548	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xd966344f8961cc190e6a5e2b7d7996373bf60b7f7933fe1dec588c45fe67f973","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:01:06:550	4f98	parse packet: 236
+19:01:06:553	4f98	ETH: job is the same
+19:01:06:555	4f98	new buf size: 0
+19:01:16:477	4f98	ETH: checking pool connection...
+19:01:16:480	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:01:16:550	4f98	got 237 bytes
+19:01:16:553	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xd966344f8961cc190e6a5e2b7d7996373bf60b7f7933fe1dec588c45fe67f973","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:01:16:556	4f98	parse packet: 236
+19:01:16:558	4f98	ETH: job is the same
+19:01:16:561	4f98	new buf size: 0
+19:01:26:336	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf4e693", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:01:26:406	4f98	got 39 bytes
+19:01:26:410	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:01:26:414	4f98	parse packet: 38
+19:01:26:416	4f98	new buf size: 0
+19:01:26:493	4f98	ETH: checking pool connection...
+19:01:26:496	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:01:26:569	4f98	got 237 bytes
+19:01:26:572	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xd966344f8961cc190e6a5e2b7d7996373bf60b7f7933fe1dec588c45fe67f973","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:01:26:575	4f98	parse packet: 236
+19:01:26:577	4f98	ETH: job is the same
+19:01:26:580	4f98	new buf size: 0
+19:01:30:340	5a58	got 293 bytes
+19:01:30:343	5a58	buf: {"id":null,"method":"mining.notify","params":["58d","0x00000000000000179f48f2e9d69b7a36504e83f828d879b2f6bc8fc5eb45949d000000000000000008f64a5a000000004287743fe0a0147098aad47f930a82bd39a9511417ce1877f14d0cb0571d6df4","0x0000000012533fe68fd3d1cfe47445abdce0b117994feb3fbbe16e3d0f675ad9",true]}
+
+19:01:30:345	5a58	parse packet: 292
+19:01:30:348	5a58	sc: job changed(2)
+19:01:30:350	5a58	new buf size: 0
+19:01:30:353	5a58	 SC: 01/01/18-19:01:30 - New job from hub.miningpoolhub.com:20550
+19:01:30:356	5a58	target: 0x0000000012533fe6 (diff: 60GH)
+19:01:31:654	48ac	GPU0 t=61C fan=51%
+19:01:32:103	4d18	em hbt: 0, dm hbt: 0, fm hbt: 93, 
+19:01:32:106	4d18	watchdog - thread 0 (gpu0), hb time 312
+19:01:32:108	4d18	watchdog - thread 1 (gpu0), hb time 47
+19:01:36:508	4f98	ETH: checking pool connection...
+19:01:36:511	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:01:36:585	4f98	got 237 bytes
+19:01:36:588	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xd966344f8961cc190e6a5e2b7d7996373bf60b7f7933fe1dec588c45fe67f973","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:01:36:590	4f98	parse packet: 236
+19:01:36:593	4f98	ETH: job is the same
+19:01:36:595	4f98	new buf size: 0
+19:01:46:352	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf4a493", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:01:46:431	4f98	got 39 bytes
+19:01:46:434	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:01:46:436	4f98	parse packet: 38
+19:01:46:439	4f98	new buf size: 0
+19:01:46:524	4f98	ETH: checking pool connection...
+19:01:46:527	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:01:46:598	4f98	got 237 bytes
+19:01:46:601	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xd966344f8961cc190e6a5e2b7d7996373bf60b7f7933fe1dec588c45fe67f973","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:01:46:604	4f98	parse packet: 236
+19:01:46:606	4f98	ETH: job is the same
+19:01:46:608	4f98	new buf size: 0
+19:01:53:987	4f98	got 237 bytes
+19:01:53:990	4f98	buf: {"id":0,"jsonrpc":"2.0","result":["0xdfafbd75613e930f0504333eb6009489bb0fd0a4f68d64c09bc0459ac18bc486","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:01:53:993	4f98	parse packet: 236
+19:01:53:996	4f98	ETH: job changed
+19:01:54:000	4f98	new buf size: 0
+19:01:54:003	4f98	ETH: 01/01/18-19:01:54 - New job from ubiq.hodlpool.com:8009
+19:01:54:006	4f98	target: 0x0000000112e0be82 (diff: 4000MH), epoch 11(1.09GB)
+19:01:54:009	4f98	ETH - Total Speed: 16.047 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:03
+19:01:54:013	4f98	ETH: GPU0 16.047 Mh/s
+19:01:54:016	4f98	 SC - Total Speed: 160.468 Mh/s, Total Shares: 0, Rejected: 0
+19:01:54:019	4f98	 SC: GPU0 160.468 Mh/s
+19:01:56:540	4f98	ETH: checking pool connection...
+19:01:56:543	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:01:56:613	4f98	got 237 bytes
+19:01:56:616	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xdfafbd75613e930f0504333eb6009489bb0fd0a4f68d64c09bc0459ac18bc486","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:01:56:619	4f98	parse packet: 236
+19:01:56:622	4f98	ETH: job is the same
+19:01:56:624	4f98	new buf size: 0
+19:02:01:662	48ac	GPU0 t=62C fan=51%
+19:02:02:191	4d18	em hbt: 0, dm hbt: 0, fm hbt: 93, 
+19:02:02:194	4d18	watchdog - thread 0 (gpu0), hb time 187
+19:02:02:196	4d18	watchdog - thread 1 (gpu0), hb time 469
+19:02:06:368	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf4c3b3", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:02:06:445	4f98	got 39 bytes
+19:02:06:449	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:02:06:451	4f98	parse packet: 38
+19:02:06:454	4f98	new buf size: 0
+19:02:06:555	4f98	ETH: checking pool connection...
+19:02:06:558	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:02:06:634	4f98	got 237 bytes
+19:02:06:637	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xdfafbd75613e930f0504333eb6009489bb0fd0a4f68d64c09bc0459ac18bc486","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:02:06:639	4f98	parse packet: 236
+19:02:06:642	4f98	ETH: job is the same
+19:02:06:644	4f98	new buf size: 0
+19:02:14:323	4f98	got 237 bytes
+19:02:14:326	4f98	buf: {"id":0,"jsonrpc":"2.0","result":["0x0ae747c0efe0cd52690e732038d98447badbfccacd737cc97f32a563e2016224","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:02:14:329	4f98	parse packet: 236
+19:02:14:333	4f98	ETH: job changed
+19:02:14:336	4f98	new buf size: 0
+19:02:14:338	4f98	ETH: 01/01/18-19:02:14 - New job from ubiq.hodlpool.com:8009
+19:02:14:341	4f98	target: 0x0000000112e0be82 (diff: 4000MH), epoch 11(1.09GB)
+19:02:14:407	4f98	ETH - Total Speed: 16.055 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:04
+19:02:14:411	4f98	ETH: GPU0 16.055 Mh/s
+19:02:14:416	4f98	 SC - Total Speed: 160.554 Mh/s, Total Shares: 0, Rejected: 0
+19:02:14:421	4f98	 SC: GPU0 160.554 Mh/s
+19:02:16:570	4f98	ETH: checking pool connection...
+19:02:16:573	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:02:16:646	4f98	got 237 bytes
+19:02:16:649	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x0ae747c0efe0cd52690e732038d98447badbfccacd737cc97f32a563e2016224","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:02:16:652	4f98	parse packet: 236
+19:02:16:655	4f98	ETH: job is the same
+19:02:16:657	4f98	new buf size: 0
+19:02:25:608	5a58	got 293 bytes
+19:02:25:612	5a58	buf: {"id":null,"method":"mining.notify","params":["58e","0x00000000000000179f48f2e9d69b7a36504e83f828d879b2f6bc8fc5eb45949d00000000000000003ff64a5a000000006246f4b4096a48b22f2dc572e71cd5ba3e9efc0ff303156461b9b82a7812da5b","0x0000000012533fe68fd3d1cfe47445abdce0b117994feb3fbbe16e3d0f675ad9",true]}
+
+19:02:25:615	5a58	parse packet: 292
+19:02:25:619	5a58	sc: job changed(2)
+19:02:25:623	5a58	new buf size: 0
+19:02:25:627	5a58	 SC: 01/01/18-19:02:25 - New job from hub.miningpoolhub.com:20550
+19:02:25:630	5a58	target: 0x0000000012533fe6 (diff: 60GH)
+19:02:26:383	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf4abc6", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:02:26:457	4f98	got 39 bytes
+19:02:26:460	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:02:26:463	4f98	parse packet: 38
+19:02:26:465	4f98	new buf size: 0
+19:02:26:586	4f98	ETH: checking pool connection...
+19:02:26:589	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:02:26:661	4f98	got 237 bytes
+19:02:26:663	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x0ae747c0efe0cd52690e732038d98447badbfccacd737cc97f32a563e2016224","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:02:26:666	4f98	parse packet: 236
+19:02:26:669	4f98	ETH: job is the same
+19:02:26:671	4f98	new buf size: 0
+19:02:31:671	48ac	GPU0 t=62C fan=51%
+19:02:32:280	4d18	em hbt: 0, dm hbt: 0, fm hbt: 0, 
+19:02:32:283	4d18	watchdog - thread 0 (gpu0), hb time 62
+19:02:32:286	4d18	watchdog - thread 1 (gpu0), hb time 328
+19:02:36:602	4f98	ETH: checking pool connection...
+19:02:36:605	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:02:36:681	4f98	got 237 bytes
+19:02:36:684	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x0ae747c0efe0cd52690e732038d98447badbfccacd737cc97f32a563e2016224","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:02:36:687	4f98	parse packet: 236
+19:02:36:689	4f98	ETH: job is the same
+19:02:36:692	4f98	new buf size: 0
+19:02:38:420	744	SC: put share nonce 8bf8343 enonce bb24002d
+19:02:38:426	744	SC round found 1 shares
+19:02:38:429	5a58	 SC: 01/01/18-19:02:38 - SHARE FOUND - (GPU 0)
+19:02:38:435	5a58	send: {"id": 10, "method": "mining.submit", "params": ["mediafraze.dualtest","58e","0x00000000000000179f48f2e9d69b7a36504e83f828d879b2f6bc8fc5eb45949d4383bf082d0024bb3ff64a5a000000006246f4b4096a48b22f2dc572e71cd5ba3e9efc0ff303156461b9b82a7812da5b"]}
+
+19:02:38:527	5a58	got 37 bytes
+19:02:38:530	5a58	buf: {"id":10,"result":true,"error":null}
+
+19:02:38:533	5a58	parse packet: 36
+19:02:38:536	5a58	 SC: Share accepted (94 ms)!
+19:02:38:690	5a58	new buf size: 0
+19:02:46:399	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf43041", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:02:46:470	4f98	got 39 bytes
+19:02:46:473	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:02:46:475	4f98	parse packet: 38
+19:02:46:478	4f98	new buf size: 0
+19:02:46:617	4f98	ETH: checking pool connection...
+19:02:46:620	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:02:46:693	4f98	got 237 bytes
+19:02:46:696	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x0ae747c0efe0cd52690e732038d98447badbfccacd737cc97f32a563e2016224","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:02:46:698	4f98	parse packet: 236
+19:02:46:701	4f98	ETH: job is the same
+19:02:46:703	4f98	new buf size: 0
+19:02:51:648	744	ETH: put share nonce 1e6b53f817615a23
+19:02:51:654	744	ETH round found 1 shares
+19:02:51:658	4f98	ETH: 01/01/18-19:02:51 - SHARE FOUND - (GPU 0)
+19:02:51:661	4f98	send: {"id":10,"method":"eth_submitWork","params":["0x1e6b53f817615a23","0x0ae747c0efe0cd52690e732038d98447badbfccacd737cc97f32a563e2016224","0x0886a81ae188356efe7a422fa8b6a7546853eaf2a4f57446c7a1810e99fd4fa9"]}
+
+19:02:51:739	4f98	got 40 bytes
+19:02:51:742	4f98	buf: {"id":10,"jsonrpc":"2.0","result":true}
+
+19:02:51:744	4f98	parse packet: 39
+19:02:51:747	4f98	ETH: Share accepted (94 ms)!
+19:02:51:750	4f98	new buf size: 0
+19:02:56:633	4f98	ETH: checking pool connection...
+19:02:56:636	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:02:56:708	4f98	got 237 bytes
+19:02:56:711	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x0ae747c0efe0cd52690e732038d98447badbfccacd737cc97f32a563e2016224","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:02:56:714	4f98	parse packet: 236
+19:02:56:716	4f98	ETH: job is the same
+19:02:56:719	4f98	new buf size: 0
+19:03:01:680	48ac	GPU0 t=63C fan=51%
+19:03:02:369	4d18	em hbt: 0, dm hbt: 0, fm hbt: 16, 
+19:03:02:372	4d18	watchdog - thread 0 (gpu0), hb time 219
+19:03:02:374	4d18	watchdog - thread 1 (gpu0), hb time 484
+19:03:06:414	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf3ed06", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:03:06:487	4f98	got 39 bytes
+19:03:06:492	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:03:06:496	4f98	parse packet: 38
+19:03:06:500	4f98	new buf size: 0
+19:03:06:649	4f98	ETH: checking pool connection...
+19:03:06:652	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:03:06:722	4f98	got 237 bytes
+19:03:06:725	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x0ae747c0efe0cd52690e732038d98447badbfccacd737cc97f32a563e2016224","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:03:06:728	4f98	parse packet: 236
+19:03:06:731	4f98	ETH: job is the same
+19:03:06:733	4f98	new buf size: 0
+19:03:16:665	4f98	ETH: checking pool connection...
+19:03:16:668	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:03:16:738	4f98	got 237 bytes
+19:03:16:741	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x0ae747c0efe0cd52690e732038d98447badbfccacd737cc97f32a563e2016224","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:03:16:743	4f98	parse packet: 236
+19:03:16:746	4f98	ETH: job is the same
+19:03:16:748	4f98	new buf size: 0
+19:03:20:943	5a58	got 293 bytes
+19:03:20:946	5a58	buf: {"id":null,"method":"mining.notify","params":["58f","0x00000000000000179f48f2e9d69b7a36504e83f828d879b2f6bc8fc5eb45949d000000000000000076f64a5a0000000010a0d2d6a0d543fc6e5c0108020fdcf596e0c7444fdcbc3b052c88102dac032f","0x0000000012533fe68fd3d1cfe47445abdce0b117994feb3fbbe16e3d0f675ad9",true]}
+
+19:03:20:948	5a58	parse packet: 292
+19:03:20:951	5a58	sc: job changed(2)
+19:03:20:954	5a58	new buf size: 0
+19:03:20:956	5a58	 SC: 01/01/18-19:03:20 - New job from hub.miningpoolhub.com:20550
+19:03:20:959	5a58	target: 0x0000000012533fe6 (diff: 60GH)
+19:03:26:430	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf34b33", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:03:26:501	4f98	got 39 bytes
+19:03:26:504	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:03:26:506	4f98	parse packet: 38
+19:03:26:509	4f98	new buf size: 0
+19:03:26:680	4f98	ETH: checking pool connection...
+19:03:26:683	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:03:26:753	4f98	got 237 bytes
+19:03:26:756	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x0ae747c0efe0cd52690e732038d98447badbfccacd737cc97f32a563e2016224","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:03:26:759	4f98	parse packet: 236
+19:03:26:761	4f98	ETH: job is the same
+19:03:26:764	4f98	new buf size: 0
+19:03:31:689	48ac	GPU0 t=63C fan=51%
+19:03:32:458	4d18	em hbt: 0, dm hbt: 0, fm hbt: 16, 
+19:03:32:461	4d18	watchdog - thread 0 (gpu0), hb time 516
+19:03:32:463	4d18	watchdog - thread 1 (gpu0), hb time 250
+19:03:36:633	4c94	ETH: put share nonce d4768483455bd58
+19:03:36:638	4c94	ETH round found 1 shares
+19:03:36:645	4f98	ETH: 01/01/18-19:03:36 - SHARE FOUND - (GPU 0)
+19:03:36:649	4f98	send: {"id":10,"method":"eth_submitWork","params":["0x0d4768483455bd58","0x0ae747c0efe0cd52690e732038d98447badbfccacd737cc97f32a563e2016224","0x7f6ed81a87acbde2be876a633b6cb2060754774af7f35561712c599e43384d9d"]}
+
+19:03:36:697	4f98	ETH: checking pool connection...
+19:03:36:700	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:03:36:737	4f98	got 40 bytes
+19:03:36:740	4f98	buf: {"id":10,"jsonrpc":"2.0","result":true}
+
+19:03:36:743	4f98	parse packet: 39
+19:03:36:746	4f98	ETH: Share accepted (94 ms)!
+19:03:36:749	4f98	new buf size: 0
+19:03:36:806	4f98	got 237 bytes
+19:03:36:809	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x0ae747c0efe0cd52690e732038d98447badbfccacd737cc97f32a563e2016224","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:03:36:812	4f98	parse packet: 236
+19:03:36:815	4f98	ETH: job is the same
+19:03:36:817	4f98	new buf size: 0
+19:03:46:446	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf3f555", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:03:46:520	4f98	got 39 bytes
+19:03:46:523	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:03:46:525	4f98	parse packet: 38
+19:03:46:528	4f98	new buf size: 0
+19:03:46:712	4f98	ETH: checking pool connection...
+19:03:46:715	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:03:46:785	4f98	got 237 bytes
+19:03:46:789	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x0ae747c0efe0cd52690e732038d98447badbfccacd737cc97f32a563e2016224","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:03:46:793	4f98	parse packet: 236
+19:03:46:796	4f98	ETH: job is the same
+19:03:46:800	4f98	new buf size: 0
+19:03:56:727	4f98	ETH: checking pool connection...
+19:03:56:730	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:03:56:801	4f98	got 237 bytes
+19:03:56:804	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x0ae747c0efe0cd52690e732038d98447badbfccacd737cc97f32a563e2016224","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:03:56:807	4f98	parse packet: 236
+19:03:56:809	4f98	ETH: job is the same
+19:03:56:812	4f98	new buf size: 0
+19:04:01:698	48ac	GPU0 t=63C fan=51%
+19:04:02:546	4d18	em hbt: 0, dm hbt: 0, fm hbt: 31, 
+19:04:02:549	4d18	watchdog - thread 0 (gpu0), hb time 453
+19:04:02:551	4d18	watchdog - thread 1 (gpu0), hb time 188
+19:04:06:461	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf37453", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:04:06:533	4f98	got 39 bytes
+19:04:06:536	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:04:06:538	4f98	parse packet: 38
+19:04:06:541	4f98	new buf size: 0
+19:04:06:742	4f98	ETH: checking pool connection...
+19:04:06:745	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:04:06:819	4f98	got 237 bytes
+19:04:06:822	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x0ae747c0efe0cd52690e732038d98447badbfccacd737cc97f32a563e2016224","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:04:06:825	4f98	parse packet: 236
+19:04:06:828	4f98	ETH: job is the same
+19:04:06:830	4f98	new buf size: 0
+19:04:16:235	5a58	got 293 bytes
+19:04:16:238	5a58	buf: {"id":null,"method":"mining.notify","params":["590","0x00000000000000179f48f2e9d69b7a36504e83f828d879b2f6bc8fc5eb45949d0000000000000000aef64a5a00000000dd53ecd339becaf05b7251f2f646b2f098d293156ec2ef163a469defddb11b62","0x0000000012533fe68fd3d1cfe47445abdce0b117994feb3fbbe16e3d0f675ad9",true]}
+
+19:04:16:240	5a58	parse packet: 292
+19:04:16:243	5a58	sc: job changed(2)
+19:04:16:246	5a58	new buf size: 0
+19:04:16:249	5a58	 SC: 01/01/18-19:04:16 - New job from hub.miningpoolhub.com:20550
+19:04:16:251	5a58	target: 0x0000000012533fe6 (diff: 60GH)
+19:04:16:758	4f98	ETH: checking pool connection...
+19:04:16:761	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:04:16:833	4f98	got 237 bytes
+19:04:16:836	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x0ae747c0efe0cd52690e732038d98447badbfccacd737cc97f32a563e2016224","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:04:16:838	4f98	parse packet: 236
+19:04:16:841	4f98	ETH: job is the same
+19:04:16:844	4f98	new buf size: 0
+19:04:26:477	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf3c980", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:04:26:548	4f98	got 39 bytes
+19:04:26:551	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:04:26:553	4f98	parse packet: 38
+19:04:26:556	4f98	new buf size: 0
+19:04:26:774	4f98	ETH: checking pool connection...
+19:04:26:779	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:04:26:851	4f98	got 237 bytes
+19:04:26:854	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x0ae747c0efe0cd52690e732038d98447badbfccacd737cc97f32a563e2016224","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:04:26:857	4f98	parse packet: 236
+19:04:26:860	4f98	ETH: job is the same
+19:04:26:862	4f98	new buf size: 0
+19:04:31:706	48ac	GPU0 t=64C fan=51%
+19:04:32:634	4d18	em hbt: 0, dm hbt: 0, fm hbt: 47, 
+19:04:32:637	4d18	watchdog - thread 0 (gpu0), hb time 188
+19:04:32:640	4d18	watchdog - thread 1 (gpu0), hb time 454
+19:04:36:789	4f98	ETH: checking pool connection...
+19:04:36:792	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:04:36:866	4f98	got 237 bytes
+19:04:36:869	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x0ae747c0efe0cd52690e732038d98447badbfccacd737cc97f32a563e2016224","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:04:36:871	4f98	parse packet: 236
+19:04:36:874	4f98	ETH: job is the same
+19:04:36:877	4f98	new buf size: 0
+19:04:46:492	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf3a5ca", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:04:46:564	4f98	got 39 bytes
+19:04:46:567	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:04:46:570	4f98	parse packet: 38
+19:04:46:572	4f98	new buf size: 0
+19:04:46:806	4f98	ETH: checking pool connection...
+19:04:46:809	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:04:46:881	4f98	got 237 bytes
+19:04:46:884	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x0ae747c0efe0cd52690e732038d98447badbfccacd737cc97f32a563e2016224","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:04:46:886	4f98	parse packet: 236
+19:04:46:889	4f98	ETH: job is the same
+19:04:46:891	4f98	new buf size: 0
+19:04:54:839	4f98	got 237 bytes
+19:04:54:843	4f98	buf: {"id":0,"jsonrpc":"2.0","result":["0x1da5618956c1ede70634462bc1b5c666dc6e9d49c82c0d0dafc53abca9c198ee","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:04:54:846	4f98	parse packet: 236
+19:04:54:848	4f98	ETH: job changed
+19:04:54:851	4f98	new buf size: 0
+19:04:54:854	4f98	ETH: 01/01/18-19:04:54 - New job from ubiq.hodlpool.com:8009
+19:04:54:857	4f98	target: 0x0000000112e0be82 (diff: 4000MH), epoch 11(1.09GB)
+19:04:54:861	4f98	ETH - Total Speed: 15.971 Mh/s, Total Shares: 2, Rejected: 0, Time: 00:06
+19:04:54:866	4f98	ETH: GPU0 15.971 Mh/s
+19:04:54:870	4f98	 SC - Total Speed: 159.711 Mh/s, Total Shares: 1, Rejected: 0
+19:04:54:874	4f98	 SC: GPU0 159.711 Mh/s
+19:04:56:665	4f98	got 237 bytes
+19:04:56:668	4f98	buf: {"id":0,"jsonrpc":"2.0","result":["0xd733ed05382d3d70ad96dd18286126aea90c7b5bb4beb1eea9926de32b8e5419","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:04:56:670	4f98	parse packet: 236
+19:04:56:673	4f98	ETH: job changed
+19:04:56:675	4f98	new buf size: 0
+19:04:56:678	4f98	ETH: 01/01/18-19:04:56 - New job from ubiq.hodlpool.com:8009
+19:04:56:681	4f98	target: 0x0000000112e0be82 (diff: 4000MH), epoch 11(1.09GB)
+19:04:56:683	4f98	ETH - Total Speed: 15.944 Mh/s, Total Shares: 2, Rejected: 0, Time: 00:06
+19:04:56:686	4f98	ETH: GPU0 15.944 Mh/s
+19:04:56:689	4f98	 SC - Total Speed: 159.437 Mh/s, Total Shares: 1, Rejected: 0
+19:04:56:692	4f98	 SC: GPU0 159.437 Mh/s
+19:04:56:821	4f98	ETH: checking pool connection...
+19:04:56:824	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:04:56:897	4f98	got 237 bytes
+19:04:56:900	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xd733ed05382d3d70ad96dd18286126aea90c7b5bb4beb1eea9926de32b8e5419","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:04:56:902	4f98	parse packet: 236
+19:04:56:905	4f98	ETH: job is the same
+19:04:56:907	4f98	new buf size: 0
+19:05:01:715	48ac	GPU0 t=64C fan=51%
+19:05:02:723	4d18	em hbt: 0, dm hbt: 0, fm hbt: 47, 
+19:05:02:725	4d18	watchdog - thread 0 (gpu0), hb time 453
+19:05:02:728	4d18	watchdog - thread 1 (gpu0), hb time 203
+19:05:06:509	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf3e2a3", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:05:06:584	4f98	got 39 bytes
+19:05:06:587	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:05:06:590	4f98	parse packet: 38
+19:05:06:593	4f98	new buf size: 0
+19:05:06:836	4f98	ETH: checking pool connection...
+19:05:06:839	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:05:06:912	4f98	got 237 bytes
+19:05:06:916	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xd733ed05382d3d70ad96dd18286126aea90c7b5bb4beb1eea9926de32b8e5419","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:05:06:918	4f98	parse packet: 236
+19:05:06:921	4f98	ETH: job is the same
+19:05:06:923	4f98	new buf size: 0
+19:05:11:594	5a58	got 293 bytes
+19:05:11:597	5a58	buf: {"id":null,"method":"mining.notify","params":["591","0x00000000000000179f48f2e9d69b7a36504e83f828d879b2f6bc8fc5eb45949d0000000000000000e5f64a5a000000005d244a7b0125f3db6c67aa21d2aa0bb48dd1cbc10dada08f2912f06d387435c9","0x0000000012533fe68fd3d1cfe47445abdce0b117994feb3fbbe16e3d0f675ad9",true]}
+
+19:05:11:600	5a58	parse packet: 292
+19:05:11:602	5a58	sc: job changed(2)
+19:05:11:605	5a58	new buf size: 0
+19:05:11:608	5a58	 SC: 01/01/18-19:05:11 - New job from hub.miningpoolhub.com:20550
+19:05:11:611	5a58	target: 0x0000000012533fe6 (diff: 60GH)
+19:05:16:851	4f98	ETH: checking pool connection...
+19:05:16:854	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:05:16:928	4f98	got 237 bytes
+19:05:16:933	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xd733ed05382d3d70ad96dd18286126aea90c7b5bb4beb1eea9926de32b8e5419","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:05:16:937	4f98	parse packet: 236
+19:05:16:940	4f98	ETH: job is the same
+19:05:16:942	4f98	new buf size: 0
+19:05:26:524	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf32fa9", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:05:26:596	4f98	got 39 bytes
+19:05:26:599	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:05:26:601	4f98	parse packet: 38
+19:05:26:604	4f98	new buf size: 0
+19:05:26:868	4f98	ETH: checking pool connection...
+19:05:26:871	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:05:26:953	4f98	got 237 bytes
+19:05:26:956	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xd733ed05382d3d70ad96dd18286126aea90c7b5bb4beb1eea9926de32b8e5419","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:05:26:959	4f98	parse packet: 236
+19:05:26:962	4f98	ETH: job is the same
+19:05:26:967	4f98	new buf size: 0
+19:05:31:726	48ac	GPU0 t=64C fan=51%
+19:05:32:811	4d18	em hbt: 0, dm hbt: 0, fm hbt: 62, 
+19:05:32:814	4d18	watchdog - thread 0 (gpu0), hb time 171
+19:05:32:817	4d18	watchdog - thread 1 (gpu0), hb time 437
+19:05:36:883	4f98	ETH: checking pool connection...
+19:05:36:886	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:05:36:957	4f98	got 237 bytes
+19:05:36:961	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xd733ed05382d3d70ad96dd18286126aea90c7b5bb4beb1eea9926de32b8e5419","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:05:36:967	4f98	parse packet: 236
+19:05:36:970	4f98	ETH: job is the same
+19:05:36:973	4f98	new buf size: 0
+19:05:46:539	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf2ba35", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:05:46:613	4f98	got 39 bytes
+19:05:46:616	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:05:46:619	4f98	parse packet: 38
+19:05:46:622	4f98	new buf size: 0
+19:05:46:899	4f98	ETH: checking pool connection...
+19:05:46:902	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:05:46:980	4f98	got 237 bytes
+19:05:46:985	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xd733ed05382d3d70ad96dd18286126aea90c7b5bb4beb1eea9926de32b8e5419","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:05:46:989	4f98	parse packet: 236
+19:05:46:994	4f98	ETH: job is the same
+19:05:47:000	4f98	new buf size: 0
+19:05:56:915	4f98	ETH: checking pool connection...
+19:05:56:919	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:05:56:991	4f98	got 237 bytes
+19:05:56:994	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xd733ed05382d3d70ad96dd18286126aea90c7b5bb4beb1eea9926de32b8e5419","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:05:56:997	4f98	parse packet: 236
+19:05:57:000	4f98	ETH: job is the same
+19:05:57:003	4f98	new buf size: 0
+19:06:01:735	48ac	GPU0 t=64C fan=51%
+19:06:02:901	4d18	em hbt: 0, dm hbt: 0, fm hbt: 62, 
+19:06:02:904	4d18	watchdog - thread 0 (gpu0), hb time 469
+19:06:02:907	4d18	watchdog - thread 1 (gpu0), hb time 187
+19:06:06:556	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf3418f", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:06:06:628	4f98	got 39 bytes
+19:06:06:631	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:06:06:634	4f98	parse packet: 38
+19:06:06:637	4f98	new buf size: 0
+19:06:06:846	5a58	got 293 bytes
+19:06:06:849	5a58	buf: {"id":null,"method":"mining.notify","params":["592","0x00000000000000179f48f2e9d69b7a36504e83f828d879b2f6bc8fc5eb45949d00000000000000001df74a5a00000000042da50a9bb9523ec52813f060cb3c43884839a3d3e9ea626fe4543bd72b3c11","0x0000000012533fe68fd3d1cfe47445abdce0b117994feb3fbbe16e3d0f675ad9",true]}
+
+19:06:06:852	5a58	parse packet: 292
+19:06:06:855	5a58	sc: job changed(2)
+19:06:06:857	5a58	new buf size: 0
+19:06:06:860	5a58	 SC: 01/01/18-19:06:06 - New job from hub.miningpoolhub.com:20550
+19:06:06:863	5a58	target: 0x0000000012533fe6 (diff: 60GH)
+19:06:06:930	4f98	ETH: checking pool connection...
+19:06:06:933	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:06:07:006	4f98	got 237 bytes
+19:06:07:009	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xd733ed05382d3d70ad96dd18286126aea90c7b5bb4beb1eea9926de32b8e5419","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:06:07:012	4f98	parse packet: 236
+19:06:07:015	4f98	ETH: job is the same
+19:06:07:018	4f98	new buf size: 0
+19:06:09:405	4f98	got 237 bytes
+19:06:09:408	4f98	buf: {"id":0,"jsonrpc":"2.0","result":["0x580391db58663773efa56c21c3cfecb8022b87617368d8d3618a9359c8c4f25d","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:06:09:411	4f98	parse packet: 236
+19:06:09:413	4f98	ETH: job changed
+19:06:09:416	4f98	new buf size: 0
+19:06:09:419	4f98	ETH: 01/01/18-19:06:09 - New job from ubiq.hodlpool.com:8009
+19:06:09:422	4f98	target: 0x0000000112e0be82 (diff: 4000MH), epoch 11(1.09GB)
+19:06:09:425	4f98	ETH - Total Speed: 15.981 Mh/s, Total Shares: 2, Rejected: 0, Time: 00:08
+19:06:09:493	4f98	ETH: GPU0 15.981 Mh/s
+19:06:09:497	4f98	 SC - Total Speed: 159.809 Mh/s, Total Shares: 1, Rejected: 0
+19:06:09:503	4f98	 SC: GPU0 159.809 Mh/s
+19:06:10:036	4c94	SC: put share nonce 5f151fe enonce 77ab0008
+19:06:10:044	4c94	SC round found 1 shares
+19:06:10:050	5a58	 SC: 01/01/18-19:06:10 - SHARE FOUND - (GPU 0)
+19:06:10:055	5a58	send: {"id": 10, "method": "mining.submit", "params": ["mediafraze.dualtest","592","0x00000000000000179f48f2e9d69b7a36504e83f828d879b2f6bc8fc5eb45949dfe51f1050800ab771df74a5a00000000042da50a9bb9523ec52813f060cb3c43884839a3d3e9ea626fe4543bd72b3c11"]}
+
+19:06:10:149	5a58	got 37 bytes
+19:06:10:152	5a58	buf: {"id":10,"result":true,"error":null}
+
+19:06:10:155	5a58	parse packet: 36
+19:06:10:158	5a58	 SC: Share accepted (94 ms)!
+19:06:10:162	5a58	new buf size: 0
+19:06:16:946	4f98	ETH: checking pool connection...
+19:06:16:949	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:06:17:021	4f98	got 237 bytes
+19:06:17:025	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x580391db58663773efa56c21c3cfecb8022b87617368d8d3618a9359c8c4f25d","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:06:17:030	4f98	parse packet: 236
+19:06:17:035	4f98	ETH: job is the same
+19:06:17:038	4f98	new buf size: 0
+19:06:26:307	4c94	SC: put share nonce 5ea5212 enonce 77ab0044
+19:06:26:310	4c94	SC round found 1 shares
+19:06:26:314	5a58	 SC: 01/01/18-19:06:26 - SHARE FOUND - (GPU 0)
+19:06:26:318	5a58	send: {"id": 10, "method": "mining.submit", "params": ["mediafraze.dualtest","592","0x00000000000000179f48f2e9d69b7a36504e83f828d879b2f6bc8fc5eb45949d1252ea054400ab771df74a5a00000000042da50a9bb9523ec52813f060cb3c43884839a3d3e9ea626fe4543bd72b3c11"]}
+
+19:06:26:411	5a58	got 37 bytes
+19:06:26:414	5a58	buf: {"id":10,"result":true,"error":null}
+
+19:06:26:417	5a58	parse packet: 36
+19:06:26:420	5a58	 SC: Share accepted (94 ms)!
+19:06:26:423	5a58	new buf size: 0
+19:06:26:571	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf38d2a", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:06:26:645	4f98	got 39 bytes
+19:06:26:648	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:06:26:651	4f98	parse packet: 38
+19:06:26:654	4f98	new buf size: 0
+19:06:26:962	4f98	ETH: checking pool connection...
+19:06:26:965	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:06:27:040	4f98	got 237 bytes
+19:06:27:043	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x580391db58663773efa56c21c3cfecb8022b87617368d8d3618a9359c8c4f25d","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:06:27:046	4f98	parse packet: 236
+19:06:27:049	4f98	ETH: job is the same
+19:06:27:052	4f98	new buf size: 0
+19:06:31:743	48ac	GPU0 t=64C fan=51%
+19:06:32:990	4d18	em hbt: 0, dm hbt: 0, fm hbt: 62, 
+19:06:32:993	4d18	watchdog - thread 0 (gpu0), hb time 188
+19:06:32:996	4d18	watchdog - thread 1 (gpu0), hb time 453
+19:06:36:977	4f98	ETH: checking pool connection...
+19:06:36:980	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:06:37:052	4f98	got 237 bytes
+19:06:37:055	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x580391db58663773efa56c21c3cfecb8022b87617368d8d3618a9359c8c4f25d","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:06:37:058	4f98	parse packet: 236
+19:06:37:061	4f98	ETH: job is the same
+19:06:37:064	4f98	new buf size: 0
+19:06:46:586	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf3af01", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:06:46:660	4f98	got 39 bytes
+19:06:46:663	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:06:46:666	4f98	parse packet: 38
+19:06:46:669	4f98	new buf size: 0
+19:06:46:993	4f98	ETH: checking pool connection...
+19:06:46:996	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:06:47:066	4f98	got 237 bytes
+19:06:47:069	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x580391db58663773efa56c21c3cfecb8022b87617368d8d3618a9359c8c4f25d","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:06:47:072	4f98	parse packet: 236
+19:06:47:075	4f98	ETH: job is the same
+19:06:47:078	4f98	new buf size: 0
+19:06:57:009	4f98	ETH: checking pool connection...
+19:06:57:012	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:06:57:098	4f98	got 237 bytes
+19:06:57:102	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x580391db58663773efa56c21c3cfecb8022b87617368d8d3618a9359c8c4f25d","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:06:57:105	4f98	parse packet: 236
+19:06:57:108	4f98	ETH: job is the same
+19:06:57:112	4f98	new buf size: 0
+19:07:01:751	48ac	GPU0 t=64C fan=51%
+19:07:02:134	5a58	got 293 bytes
+19:07:02:137	5a58	buf: {"id":null,"method":"mining.notify","params":["593","0x00000000000000179f48f2e9d69b7a36504e83f828d879b2f6bc8fc5eb45949d000000000000000054f74a5a000000008205732efa95fbc45934f5839e9c21fc7e6017fbe9b59a636437c1f21059f376","0x0000000012533fe68fd3d1cfe47445abdce0b117994feb3fbbe16e3d0f675ad9",true]}
+
+19:07:02:140	5a58	parse packet: 292
+19:07:02:144	5a58	sc: job changed(2)
+19:07:02:146	5a58	new buf size: 0
+19:07:02:149	5a58	 SC: 01/01/18-19:07:02 - New job from hub.miningpoolhub.com:20550
+19:07:02:153	5a58	target: 0x0000000012533fe6 (diff: 60GH)
+19:07:03:080	4d18	em hbt: 0, dm hbt: 0, fm hbt: 78, 
+19:07:03:083	4d18	watchdog - thread 0 (gpu0), hb time 453
+19:07:03:086	4d18	watchdog - thread 1 (gpu0), hb time 203
+19:07:06:602	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf39cd0", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:07:06:675	4f98	got 39 bytes
+19:07:06:679	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:07:06:686	4f98	parse packet: 38
+19:07:06:690	4f98	new buf size: 0
+19:07:07:024	4f98	ETH: checking pool connection...
+19:07:07:028	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:07:07:099	4f98	got 237 bytes
+19:07:07:103	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x580391db58663773efa56c21c3cfecb8022b87617368d8d3618a9359c8c4f25d","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:07:07:105	4f98	parse packet: 236
+19:07:07:109	4f98	ETH: job is the same
+19:07:07:113	4f98	new buf size: 0
+19:07:17:040	4f98	ETH: checking pool connection...
+19:07:17:043	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:07:17:130	4f98	got 237 bytes
+19:07:17:133	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x580391db58663773efa56c21c3cfecb8022b87617368d8d3618a9359c8c4f25d","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:07:17:136	4f98	parse packet: 236
+19:07:17:139	4f98	ETH: job is the same
+19:07:17:142	4f98	new buf size: 0
+19:07:26:617	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf3ef19", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:07:26:688	4f98	got 39 bytes
+19:07:26:692	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:07:26:695	4f98	parse packet: 38
+19:07:26:698	4f98	new buf size: 0
+19:07:27:055	4f98	ETH: checking pool connection...
+19:07:27:058	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:07:27:128	4f98	got 237 bytes
+19:07:27:131	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x580391db58663773efa56c21c3cfecb8022b87617368d8d3618a9359c8c4f25d","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:07:27:134	4f98	parse packet: 236
+19:07:27:138	4f98	ETH: job is the same
+19:07:27:141	4f98	new buf size: 0
+19:07:31:760	48ac	GPU0 t=64C fan=51%
+19:07:33:171	4d18	em hbt: 0, dm hbt: 0, fm hbt: 94, 
+19:07:33:174	4d18	watchdog - thread 0 (gpu0), hb time 188
+19:07:33:177	4d18	watchdog - thread 1 (gpu0), hb time 453
+19:07:37:071	4f98	ETH: checking pool connection...
+19:07:37:076	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:07:37:147	4f98	got 237 bytes
+19:07:37:150	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x580391db58663773efa56c21c3cfecb8022b87617368d8d3618a9359c8c4f25d","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:07:37:153	4f98	parse packet: 236
+19:07:37:156	4f98	ETH: job is the same
+19:07:37:159	4f98	new buf size: 0
+19:07:46:634	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf34119", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:07:46:706	4f98	got 39 bytes
+19:07:46:710	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:07:46:714	4f98	parse packet: 38
+19:07:46:718	4f98	new buf size: 0
+19:07:47:087	4f98	ETH: checking pool connection...
+19:07:47:091	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:07:47:162	4f98	got 237 bytes
+19:07:47:165	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x580391db58663773efa56c21c3cfecb8022b87617368d8d3618a9359c8c4f25d","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:07:47:168	4f98	parse packet: 236
+19:07:47:171	4f98	ETH: job is the same
+19:07:47:174	4f98	new buf size: 0
+19:07:57:102	4f98	ETH: checking pool connection...
+19:07:57:106	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:07:57:184	4f98	got 237 bytes
+19:07:57:187	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x580391db58663773efa56c21c3cfecb8022b87617368d8d3618a9359c8c4f25d","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:07:57:190	4f98	parse packet: 236
+19:07:57:193	4f98	ETH: job is the same
+19:07:57:196	4f98	new buf size: 0
+19:07:57:449	5a58	got 293 bytes
+19:07:57:452	5a58	buf: {"id":null,"method":"mining.notify","params":["594","0x00000000000000179f48f2e9d69b7a36504e83f828d879b2f6bc8fc5eb45949d00000000000000008bf74a5a00000000e0c7b16e86754d54e444d42db78c4bda50ee9d513fff6417ab72449e01dd157c","0x0000000012533fe68fd3d1cfe47445abdce0b117994feb3fbbe16e3d0f675ad9",true]}
+
+19:07:57:455	5a58	parse packet: 292
+19:07:57:458	5a58	sc: job changed(2)
+19:07:57:461	5a58	new buf size: 0
+19:07:57:464	5a58	 SC: 01/01/18-19:07:57 - New job from hub.miningpoolhub.com:20550
+19:07:57:468	5a58	target: 0x0000000012533fe6 (diff: 60GH)
+19:08:01:905	48ac	GPU0 t=64C fan=51%
+19:08:03:261	4d18	em hbt: 0, dm hbt: 0, fm hbt: 110, 
+19:08:03:264	4d18	watchdog - thread 0 (gpu0), hb time 469
+19:08:03:267	4d18	watchdog - thread 1 (gpu0), hb time 204
+19:08:06:650	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf3ea7c", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:08:06:739	4f98	got 39 bytes
+19:08:06:743	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:08:06:746	4f98	parse packet: 38
+19:08:06:749	4f98	new buf size: 0
+19:08:07:117	4f98	ETH: checking pool connection...
+19:08:07:123	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:08:07:208	4f98	got 237 bytes
+19:08:07:211	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x580391db58663773efa56c21c3cfecb8022b87617368d8d3618a9359c8c4f25d","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:08:07:214	4f98	parse packet: 236
+19:08:07:217	4f98	ETH: job is the same
+19:08:07:220	4f98	new buf size: 0
+19:08:17:149	4f98	ETH: checking pool connection...
+19:08:17:152	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:08:17:227	4f98	got 237 bytes
+19:08:17:230	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x580391db58663773efa56c21c3cfecb8022b87617368d8d3618a9359c8c4f25d","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:08:17:233	4f98	parse packet: 236
+19:08:17:236	4f98	ETH: job is the same
+19:08:17:239	4f98	new buf size: 0
+19:08:26:665	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf40b80", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:08:26:738	4f98	got 39 bytes
+19:08:26:741	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:08:26:744	4f98	parse packet: 38
+19:08:26:747	4f98	new buf size: 0
+19:08:27:165	4f98	ETH: checking pool connection...
+19:08:27:168	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:08:27:238	4f98	got 237 bytes
+19:08:27:241	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x580391db58663773efa56c21c3cfecb8022b87617368d8d3618a9359c8c4f25d","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:08:27:244	4f98	parse packet: 236
+19:08:27:247	4f98	ETH: job is the same
+19:08:27:250	4f98	new buf size: 0
+19:08:31:914	48ac	GPU0 t=64C fan=51%
+19:08:33:350	4d18	em hbt: 0, dm hbt: 0, fm hbt: 0, 
+19:08:33:353	4d18	watchdog - thread 0 (gpu0), hb time 218
+19:08:33:356	4d18	watchdog - thread 1 (gpu0), hb time 484
+19:08:37:181	4f98	ETH: checking pool connection...
+19:08:37:184	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:08:37:256	4f98	got 237 bytes
+19:08:37:259	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x580391db58663773efa56c21c3cfecb8022b87617368d8d3618a9359c8c4f25d","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:08:37:262	4f98	parse packet: 236
+19:08:37:265	4f98	ETH: job is the same
+19:08:37:268	4f98	new buf size: 0
+19:08:46:681	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf3ba0f", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:08:46:758	4f98	got 39 bytes
+19:08:46:761	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:08:46:764	4f98	parse packet: 38
+19:08:46:767	4f98	new buf size: 0
+19:08:47:196	4f98	ETH: checking pool connection...
+19:08:47:199	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:08:47:271	4f98	got 237 bytes
+19:08:47:274	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x580391db58663773efa56c21c3cfecb8022b87617368d8d3618a9359c8c4f25d","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:08:47:277	4f98	parse packet: 236
+19:08:47:280	4f98	ETH: job is the same
+19:08:47:283	4f98	new buf size: 0
+19:08:52:746	5a58	got 293 bytes
+19:08:52:749	5a58	buf: {"id":null,"method":"mining.notify","params":["595","0x00000000000000179f48f2e9d69b7a36504e83f828d879b2f6bc8fc5eb45949d0000000000000000c2f74a5a0000000023845f844517735b9dad655fbd6bbb1ea435c603efd35eb5f586a5c64ce12c20","0x0000000012533fe68fd3d1cfe47445abdce0b117994feb3fbbe16e3d0f675ad9",true]}
+
+19:08:52:752	5a58	parse packet: 292
+19:08:52:755	5a58	sc: job changed(2)
+19:08:52:757	5a58	new buf size: 0
+19:08:52:760	5a58	 SC: 01/01/18-19:08:52 - New job from hub.miningpoolhub.com:20550
+19:08:52:763	5a58	target: 0x0000000012533fe6 (diff: 60GH)
+19:08:57:212	4f98	ETH: checking pool connection...
+19:08:57:216	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:08:57:290	4f98	got 237 bytes
+19:08:57:293	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x580391db58663773efa56c21c3cfecb8022b87617368d8d3618a9359c8c4f25d","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:08:57:296	4f98	parse packet: 236
+19:08:57:298	4f98	ETH: job is the same
+19:08:57:301	4f98	new buf size: 0
+19:09:01:923	48ac	GPU0 t=64C fan=51%
+19:09:03:439	4d18	em hbt: 0, dm hbt: 0, fm hbt: 15, 
+19:09:03:442	4d18	watchdog - thread 0 (gpu0), hb time 484
+19:09:03:445	4d18	watchdog - thread 1 (gpu0), hb time 234
+19:09:06:695	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf40157", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:09:06:775	4f98	got 39 bytes
+19:09:06:778	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:09:06:782	4f98	parse packet: 38
+19:09:06:785	4f98	new buf size: 0
+19:09:07:227	4f98	ETH: checking pool connection...
+19:09:07:230	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:09:07:301	4f98	got 237 bytes
+19:09:07:304	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x580391db58663773efa56c21c3cfecb8022b87617368d8d3618a9359c8c4f25d","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:09:07:307	4f98	parse packet: 236
+19:09:07:310	4f98	ETH: job is the same
+19:09:07:313	4f98	new buf size: 0
+19:09:17:243	4f98	ETH: checking pool connection...
+19:09:17:246	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:09:17:320	4f98	got 237 bytes
+19:09:17:324	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x580391db58663773efa56c21c3cfecb8022b87617368d8d3618a9359c8c4f25d","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:09:17:328	4f98	parse packet: 236
+19:09:17:331	4f98	ETH: job is the same
+19:09:17:336	4f98	new buf size: 0
+19:09:26:712	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf3c30c", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:09:26:795	4f98	got 39 bytes
+19:09:26:798	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:09:26:801	4f98	parse packet: 38
+19:09:26:804	4f98	new buf size: 0
+19:09:27:258	4f98	ETH: checking pool connection...
+19:09:27:261	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:09:27:334	4f98	got 237 bytes
+19:09:27:337	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x580391db58663773efa56c21c3cfecb8022b87617368d8d3618a9359c8c4f25d","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:09:27:340	4f98	parse packet: 236
+19:09:27:343	4f98	ETH: job is the same
+19:09:27:346	4f98	new buf size: 0
+19:09:31:931	48ac	GPU0 t=65C fan=51%
+19:09:33:528	4d18	em hbt: 0, dm hbt: 0, fm hbt: 15, 
+19:09:33:532	4d18	watchdog - thread 0 (gpu0), hb time 219
+19:09:33:535	4d18	watchdog - thread 1 (gpu0), hb time 484
+19:09:37:274	4f98	ETH: checking pool connection...
+19:09:37:277	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:09:37:347	4f98	got 237 bytes
+19:09:37:351	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x580391db58663773efa56c21c3cfecb8022b87617368d8d3618a9359c8c4f25d","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:09:37:354	4f98	parse packet: 236
+19:09:37:357	4f98	ETH: job is the same
+19:09:37:361	4f98	new buf size: 0
+19:09:43:911	4f98	got 237 bytes
+19:09:43:914	4f98	buf: {"id":0,"jsonrpc":"2.0","result":["0xff86ef58bc8512082ef2e7bec5a286ee7dbbd51a50cdcd2fa1720ccd75331692","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:09:43:917	4f98	parse packet: 236
+19:09:43:920	4f98	ETH: job changed
+19:09:43:923	4f98	new buf size: 0
+19:09:43:926	4f98	ETH: 01/01/18-19:09:43 - New job from ubiq.hodlpool.com:8009
+19:09:43:929	4f98	target: 0x0000000112e0be82 (diff: 4000MH), epoch 11(1.09GB)
+19:09:43:933	4f98	ETH - Total Speed: 15.978 Mh/s, Total Shares: 2, Rejected: 0, Time: 00:11
+19:09:45:499	4f98	ETH: GPU0 15.978 Mh/s
+19:09:45:507	4f98	 SC - Total Speed: 159.777 Mh/s, Total Shares: 3, Rejected: 0
+19:09:45:515	4f98	 SC: GPU0 159.777 Mh/s
+19:09:46:727	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf3685f", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:09:46:798	4f98	got 39 bytes
+19:09:46:802	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:09:46:807	4f98	parse packet: 38
+19:09:46:811	4f98	new buf size: 0
+19:09:47:289	4f98	ETH: checking pool connection...
+19:09:47:292	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:09:47:362	4f98	got 237 bytes
+19:09:47:366	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xff86ef58bc8512082ef2e7bec5a286ee7dbbd51a50cdcd2fa1720ccd75331692","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:09:47:369	4f98	parse packet: 236
+19:09:47:373	4f98	ETH: job is the same
+19:09:47:376	4f98	new buf size: 0
+19:09:48:041	5a58	got 293 bytes
+19:09:48:044	5a58	buf: {"id":null,"method":"mining.notify","params":["596","0x00000000000000179f48f2e9d69b7a36504e83f828d879b2f6bc8fc5eb45949d0000000000000000faf74a5a000000003c437bf942f33290088288a7351d081c26a8a797270ae7ae93351a5c688de964","0x0000000012533fe68fd3d1cfe47445abdce0b117994feb3fbbe16e3d0f675ad9",true]}
+
+19:09:48:047	5a58	parse packet: 292
+19:09:48:050	5a58	sc: job changed(2)
+19:09:48:054	5a58	new buf size: 0
+19:09:48:057	5a58	 SC: 01/01/18-19:09:48 - New job from hub.miningpoolhub.com:20550
+19:09:48:060	5a58	target: 0x0000000012533fe6 (diff: 60GH)
+19:09:57:304	4f98	ETH: checking pool connection...
+19:09:57:308	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:09:57:381	4f98	got 237 bytes
+19:09:57:384	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xff86ef58bc8512082ef2e7bec5a286ee7dbbd51a50cdcd2fa1720ccd75331692","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:09:57:387	4f98	parse packet: 236
+19:09:57:390	4f98	ETH: job is the same
+19:09:57:394	4f98	new buf size: 0
+19:10:01:215	4f98	got 237 bytes
+19:10:01:221	4f98	buf: {"id":0,"jsonrpc":"2.0","result":["0x4aea83eb84e272c711e995157803d1719433e3a12d7c3e8f5f0e8eca109bd5a7","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:10:01:225	4f98	parse packet: 236
+19:10:01:228	4f98	ETH: job changed
+19:10:01:231	4f98	new buf size: 0
+19:10:01:234	4f98	ETH: 01/01/18-19:10:01 - New job from ubiq.hodlpool.com:8009
+19:10:01:237	4f98	target: 0x0000000112e0be82 (diff: 4000MH), epoch 11(1.09GB)
+19:10:01:240	4f98	ETH - Total Speed: 15.974 Mh/s, Total Shares: 2, Rejected: 0, Time: 00:11
+19:10:01:244	4f98	ETH: GPU0 15.974 Mh/s
+19:10:01:247	4f98	 SC - Total Speed: 159.741 Mh/s, Total Shares: 3, Rejected: 0
+19:10:01:250	4f98	 SC: GPU0 159.741 Mh/s
+19:10:01:940	48ac	GPU0 t=64C fan=51%
+19:10:03:618	4d18	em hbt: 0, dm hbt: 0, fm hbt: 31, 
+19:10:03:621	4d18	watchdog - thread 0 (gpu0), hb time 516
+19:10:03:624	4d18	watchdog - thread 1 (gpu0), hb time 250
+19:10:05:812	4f98	got 237 bytes
+19:10:05:815	4f98	buf: {"id":0,"jsonrpc":"2.0","result":["0xbde0028790184231580b28fe7687d5a48cad1466c599237bf8213e52bef513d7","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:10:05:820	4f98	parse packet: 236
+19:10:05:827	4f98	ETH: job changed
+19:10:05:832	4f98	new buf size: 0
+19:10:05:838	4f98	ETH: 01/01/18-19:10:05 - New job from ubiq.hodlpool.com:8009
+19:10:05:845	4f98	target: 0x0000000112e0be82 (diff: 4000MH), epoch 11(1.09GB)
+19:10:05:848	4f98	ETH - Total Speed: 15.905 Mh/s, Total Shares: 2, Rejected: 0, Time: 00:12
+19:10:05:851	4f98	ETH: GPU0 15.905 Mh/s
+19:10:05:854	4f98	 SC - Total Speed: 159.052 Mh/s, Total Shares: 3, Rejected: 0
+19:10:05:857	4f98	 SC: GPU0 159.052 Mh/s
+19:10:06:743	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf38083", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:10:06:816	4f98	got 39 bytes
+19:10:06:820	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:10:06:824	4f98	parse packet: 38
+19:10:06:827	4f98	new buf size: 0
+19:10:07:321	4f98	ETH: checking pool connection...
+19:10:07:325	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:10:07:397	4f98	got 237 bytes
+19:10:07:400	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0xbde0028790184231580b28fe7687d5a48cad1466c599237bf8213e52bef513d7","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:10:07:403	4f98	parse packet: 236
+19:10:07:406	4f98	ETH: job is the same
+19:10:07:409	4f98	new buf size: 0
+19:10:16:941	4f98	got 237 bytes
+19:10:16:944	4f98	buf: {"id":0,"jsonrpc":"2.0","result":["0x127517e18867330a61beffa622bc5a337997fb1470ee10e53a42774ecbb129cb","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:10:16:947	4f98	parse packet: 236
+19:10:16:951	4f98	ETH: job changed
+19:10:16:954	4f98	new buf size: 0
+19:10:16:957	4f98	ETH: 01/01/18-19:10:16 - New job from ubiq.hodlpool.com:8009
+19:10:16:960	4f98	target: 0x0000000112e0be82 (diff: 4000MH), epoch 11(1.09GB)
+19:10:16:963	4f98	ETH - Total Speed: 15.966 Mh/s, Total Shares: 2, Rejected: 0, Time: 00:12
+19:10:16:966	4f98	ETH: GPU0 15.966 Mh/s
+19:10:16:969	4f98	 SC - Total Speed: 159.657 Mh/s, Total Shares: 3, Rejected: 0
+19:10:16:972	4f98	 SC: GPU0 159.657 Mh/s
+19:10:17:337	4f98	ETH: checking pool connection...
+19:10:17:340	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:10:17:413	4f98	got 237 bytes
+19:10:17:416	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x127517e18867330a61beffa622bc5a337997fb1470ee10e53a42774ecbb129cb","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:10:17:419	4f98	parse packet: 236
+19:10:17:422	4f98	ETH: job is the same
+19:10:17:425	4f98	new buf size: 0
+19:10:24:222	4c94	ETH: put share nonce 3d235ec40468fd76
+19:10:24:226	4c94	ETH round found 1 shares
+19:10:24:229	4f98	ETH: 01/01/18-19:10:24 - SHARE FOUND - (GPU 0)
+19:10:24:232	4f98	send: {"id":10,"method":"eth_submitWork","params":["0x3d235ec40468fd76","0x127517e18867330a61beffa622bc5a337997fb1470ee10e53a42774ecbb129cb","0x518c4e2d889b1aa6028b33f4fc4ae77267fcb66eb1d140a17c6c01ad90d00ad8"]}
+
+19:10:24:312	4f98	got 40 bytes
+19:10:24:315	4f98	buf: {"id":10,"jsonrpc":"2.0","result":true}
+
+19:10:24:318	4f98	parse packet: 39
+19:10:24:321	4f98	ETH: Share accepted (94 ms)!
+19:10:24:324	4f98	new buf size: 0
+19:10:26:758	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf2b7b1", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:10:26:828	4f98	got 39 bytes
+19:10:26:831	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:10:26:835	4f98	parse packet: 38
+19:10:26:838	4f98	new buf size: 0
+19:10:27:352	4f98	ETH: checking pool connection...
+19:10:27:355	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:10:27:428	4f98	got 237 bytes
+19:10:27:431	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x127517e18867330a61beffa622bc5a337997fb1470ee10e53a42774ecbb129cb","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:10:27:434	4f98	parse packet: 236
+19:10:27:437	4f98	ETH: job is the same
+19:10:27:440	4f98	new buf size: 0
+19:10:31:948	48ac	GPU0 t=64C fan=51%
+19:10:33:707	4d18	em hbt: 0, dm hbt: 0, fm hbt: 31, 
+19:10:33:710	4d18	watchdog - thread 0 (gpu0), hb time 266
+19:10:33:713	4d18	watchdog - thread 1 (gpu0), hb time 547
+19:10:37:367	4f98	ETH: checking pool connection...
+19:10:37:370	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:10:37:441	4f98	got 237 bytes
+19:10:37:444	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x127517e18867330a61beffa622bc5a337997fb1470ee10e53a42774ecbb129cb","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:10:37:447	4f98	parse packet: 236
+19:10:37:449	4f98	ETH: job is the same
+19:10:37:452	4f98	new buf size: 0
+19:10:43:364	5a58	got 293 bytes
+19:10:43:368	5a58	buf: {"id":null,"method":"mining.notify","params":["597","0x00000000000000179f48f2e9d69b7a36504e83f828d879b2f6bc8fc5eb45949d000000000000000031f84a5a0000000044359b3fe174f4c1a113afbb2c239334bb53b4181dc9ab4b1529c27f95f2094b","0x0000000012533fe68fd3d1cfe47445abdce0b117994feb3fbbe16e3d0f675ad9",true]}
+
+19:10:43:371	5a58	parse packet: 292
+19:10:43:374	5a58	sc: job changed(2)
+19:10:43:377	5a58	new buf size: 0
+19:10:43:380	5a58	 SC: 01/01/18-19:10:43 - New job from hub.miningpoolhub.com:20550
+19:10:43:383	5a58	target: 0x0000000012533fe6 (diff: 60GH)
+19:10:46:775	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf31d8b", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:10:46:847	4f98	got 39 bytes
+19:10:46:850	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:10:46:854	4f98	parse packet: 38
+19:10:46:858	4f98	new buf size: 0
+19:10:47:383	4f98	ETH: checking pool connection...
+19:10:47:386	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:10:47:459	4f98	got 237 bytes
+19:10:47:462	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x127517e18867330a61beffa622bc5a337997fb1470ee10e53a42774ecbb129cb","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:10:47:466	4f98	parse packet: 236
+19:10:47:469	4f98	ETH: job is the same
+19:10:47:473	4f98	new buf size: 0
+19:10:57:399	4f98	ETH: checking pool connection...
+19:10:57:402	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:10:57:475	4f98	got 237 bytes
+19:10:57:478	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x127517e18867330a61beffa622bc5a337997fb1470ee10e53a42774ecbb129cb","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:10:57:481	4f98	parse packet: 236
+19:10:57:484	4f98	ETH: job is the same
+19:10:57:487	4f98	new buf size: 0
+19:11:01:956	48ac	GPU0 t=64C fan=51%
+19:11:03:796	4d18	em hbt: 0, dm hbt: 0, fm hbt: 47, 
+19:11:03:799	4d18	watchdog - thread 0 (gpu0), hb time 516
+19:11:03:802	4d18	watchdog - thread 1 (gpu0), hb time 250
+19:11:06:790	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf3a7dd", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:11:06:863	4f98	got 39 bytes
+19:11:06:866	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:11:06:870	4f98	parse packet: 38
+19:11:06:873	4f98	new buf size: 0
+19:11:07:414	4f98	ETH: checking pool connection...
+19:11:07:417	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:11:07:490	4f98	got 237 bytes
+19:11:07:493	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x127517e18867330a61beffa622bc5a337997fb1470ee10e53a42774ecbb129cb","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:11:07:496	4f98	parse packet: 236
+19:11:07:499	4f98	ETH: job is the same
+19:11:07:502	4f98	new buf size: 0
+19:11:17:430	4f98	ETH: checking pool connection...
+19:11:17:433	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:11:17:505	4f98	got 237 bytes
+19:11:17:508	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x127517e18867330a61beffa622bc5a337997fb1470ee10e53a42774ecbb129cb","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:11:17:511	4f98	parse packet: 236
+19:11:17:514	4f98	ETH: job is the same
+19:11:17:517	4f98	new buf size: 0
+19:11:26:805	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf2e1c4", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:11:26:877	4f98	got 39 bytes
+19:11:26:882	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:11:26:887	4f98	parse packet: 38
+19:11:26:890	4f98	new buf size: 0
+19:11:27:446	4f98	ETH: checking pool connection...
+19:11:27:449	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:11:27:521	4f98	got 237 bytes
+19:11:27:524	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x127517e18867330a61beffa622bc5a337997fb1470ee10e53a42774ecbb129cb","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:11:27:527	4f98	parse packet: 236
+19:11:27:530	4f98	ETH: job is the same
+19:11:27:533	4f98	new buf size: 0
+19:11:31:965	48ac	GPU0 t=65C fan=51%
+19:11:33:885	4d18	em hbt: 0, dm hbt: 0, fm hbt: 63, 
+19:11:33:888	4d18	watchdog - thread 0 (gpu0), hb time 235
+19:11:33:892	4d18	watchdog - thread 1 (gpu0), hb time 500
+19:11:37:461	4f98	ETH: checking pool connection...
+19:11:37:465	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:11:37:538	4f98	got 237 bytes
+19:11:37:541	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x127517e18867330a61beffa622bc5a337997fb1470ee10e53a42774ecbb129cb","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:11:37:545	4f98	parse packet: 236
+19:11:37:547	4f98	ETH: job is the same
+19:11:37:550	4f98	new buf size: 0
+19:11:38:723	5a58	got 293 bytes
+19:11:38:726	5a58	buf: {"id":null,"method":"mining.notify","params":["598","0x00000000000000179f48f2e9d69b7a36504e83f828d879b2f6bc8fc5eb45949d000000000000000068f84a5a00000000b1c413028a6669b0324389b7879f8f43db006ad8345a09107a695ca1c9544b90","0x0000000012533fe68fd3d1cfe47445abdce0b117994feb3fbbe16e3d0f675ad9",true]}
+
+19:11:38:730	5a58	parse packet: 292
+19:11:38:733	5a58	sc: job changed(2)
+19:11:38:736	5a58	new buf size: 0
+19:11:38:739	5a58	 SC: 01/01/18-19:11:38 - New job from hub.miningpoolhub.com:20550
+19:11:38:742	5a58	target: 0x0000000012533fe6 (diff: 60GH)
+19:11:46:820	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf26e33", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:11:46:897	4f98	got 39 bytes
+19:11:46:900	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:11:46:903	4f98	parse packet: 38
+19:11:46:906	4f98	new buf size: 0
+19:11:47:477	4f98	ETH: checking pool connection...
+19:11:47:480	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:11:47:554	4f98	got 237 bytes
+19:11:47:557	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x127517e18867330a61beffa622bc5a337997fb1470ee10e53a42774ecbb129cb","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:11:47:560	4f98	parse packet: 236
+19:11:47:563	4f98	ETH: job is the same
+19:11:47:566	4f98	new buf size: 0
+19:11:57:493	4f98	ETH: checking pool connection...
+19:11:57:496	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:11:57:570	4f98	got 237 bytes
+19:11:57:574	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x127517e18867330a61beffa622bc5a337997fb1470ee10e53a42774ecbb129cb","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:11:57:578	4f98	parse packet: 236
+19:11:57:582	4f98	ETH: job is the same
+19:11:57:586	4f98	new buf size: 0
+19:12:01:974	48ac	GPU0 t=65C fan=51%
+19:12:03:975	4d18	em hbt: 0, dm hbt: 0, fm hbt: 63, 
+19:12:03:978	4d18	watchdog - thread 0 (gpu0), hb time 484
+19:12:03:981	4d18	watchdog - thread 1 (gpu0), hb time 203
+19:12:06:837	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf144c5", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:12:06:912	4f98	got 39 bytes
+19:12:06:916	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:12:06:919	4f98	parse packet: 38
+19:12:06:922	4f98	new buf size: 0
+19:12:07:509	4f98	ETH: checking pool connection...
+19:12:07:512	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:12:07:585	4f98	got 237 bytes
+19:12:07:588	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x127517e18867330a61beffa622bc5a337997fb1470ee10e53a42774ecbb129cb","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:12:07:591	4f98	parse packet: 236
+19:12:07:594	4f98	ETH: job is the same
+19:12:07:598	4f98	new buf size: 0
+19:12:17:523	4f98	ETH: checking pool connection...
+19:12:17:527	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:12:17:601	4f98	got 237 bytes
+19:12:17:606	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x127517e18867330a61beffa622bc5a337997fb1470ee10e53a42774ecbb129cb","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:12:17:610	4f98	parse packet: 236
+19:12:17:615	4f98	ETH: job is the same
+19:12:17:617	4f98	new buf size: 0
+19:12:26:852	4f98	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf38fec", "0x000000000000000000000000000000000000000000000000000000004d50b15f"]}
+
+19:12:26:924	4f98	got 39 bytes
+19:12:26:927	4f98	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+19:12:26:930	4f98	parse packet: 38
+19:12:26:933	4f98	new buf size: 0
+19:12:27:540	4f98	ETH: checking pool connection...
+19:12:27:544	4f98	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+19:12:27:632	4f98	got 237 bytes
+19:12:27:635	4f98	buf: {"id":3,"jsonrpc":"2.0","result":["0x127517e18867330a61beffa622bc5a337997fb1470ee10e53a42774ecbb129cb","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+19:12:27:639	4f98	parse packet: 236
+19:12:27:642	4f98	ETH: job is the same
+19:12:27:645	4f98	new buf size: 0
+19:12:29:177	4ec8	Quit...

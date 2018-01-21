@@ -1,0 +1,19 @@
+18:57:14:878	49bc	Check and remove old log files...
+18:57:14:882	49bc	args: -wd 1 -r 1 -epool stratum+tcp://ubiq.hodlpool.com:8009 -ewal 0x23200382477bacc0c16bed777fc88f836b496eb6 -esm 0 -allpools 1 -mport -3333 -asm 1 -dpool -dpool stratum+tcp://hub.miningpoolhub.com:20550 -dwal mediafraze.$rigName -dcoin sia -allpools 1 
+18:57:14:884	49bc	
+18:57:14:887	49bc	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+18:57:14:889	49bc	บ     Claymore's Dual ETH + DCR/SC/LBC/PASC GPU Miner v10.2      บ
+18:57:14:893	49bc	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+18:57:14:897	49bc	
+18:57:15:112	49bc	ETH: 1 pool is specified
+18:57:15:115	49bc	Main Ethereum pool is ubiq.hodlpool.com:8009
+18:57:15:117	49bc	SC: 0 pool is specified
+18:57:15:184	49bc	OpenCL platform: NVIDIA CUDA
+18:57:15:187	49bc	AMD OpenCL platform not found 
+18:57:15:352	49bc	CUDA initializing...
+
+18:57:15:355	49bc	NVIDIA Cards available: 1 
+18:57:15:358	49bc	CUDA Driver Version/Runtime Version: 9.1/8.0
+18:57:15:365	49bc	GPU #0: GeForce GTX 980 Ti, 6144 MB available, 22 compute units, capability: 5.2
+
+18:57:15:368	49bc	Total cards: 1 

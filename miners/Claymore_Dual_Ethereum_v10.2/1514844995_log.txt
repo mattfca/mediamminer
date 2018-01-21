@@ -1,0 +1,282 @@
+14:16:35:641	4e14	Check and remove old log files...
+14:16:35:644	4e14	args:  -epool ubiq.hodlpool.com:8009 -ewal 0xEa2b941B32da24B4Fa99ef2578d1DF50C26dA523 -eworker mediaminer1 -epsw x -esm 0 -allcoins 1 
+14:16:35:646	4e14	
+14:16:35:650	4e14	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+14:16:35:653	4e14	บ     Claymore's Dual ETH + DCR/SC/LBC/PASC GPU Miner v10.2      บ
+14:16:35:655	4e14	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+14:16:35:658	4e14	
+14:16:35:862	4e14	ETH: 1 pool is specified
+14:16:35:867	4e14	Main Ethereum pool is ubiq.hodlpool.com:8009
+14:16:35:871	4e14	DCR: 0 pool is specified
+14:16:35:934	4e14	OpenCL platform: NVIDIA CUDA
+14:16:35:937	4e14	AMD OpenCL platform not found 
+14:16:36:106	4e14	CUDA initializing...
+
+14:16:36:108	4e14	NVIDIA Cards available: 1 
+14:16:36:111	4e14	CUDA Driver Version/Runtime Version: 9.1/8.0
+14:16:36:115	4e14	GPU #0: GeForce GTX 980 Ti, 6144 MB available, 22 compute units, capability: 5.2
+
+14:16:36:118	4e14	Total cards: 1 
+14:16:40:126	4e14	No AMD cards in the list, ADL library will not be used.
+14:16:40:141	4e14	NVML version: 9.388.13
+14:16:40:315	2020	ETH: Stratum - connecting to 'ubiq.hodlpool.com' <158.69.248.48> port 8009
+14:16:40:357	4e14	No pool specified for Decred! Ethereum-only mining mode is enabled
+14:16:40:360	4e14	ETHEREUM-ONLY MINING MODE ENABLED (-mode 1)
+14:16:40:362	4e14	ETH: eth-proxy stratum mode
+14:16:40:366	4e14	"-allcoins" option is set, default pools will be used for devfee, check "Readme" file for details.
+14:16:40:370	4e14	Watchdog enabled
+14:16:40:373	4e14	Remote management (READ-ONLY MODE) is enabled on port 3333
+14:16:40:375	4e14	
+14:16:40:395	2020	send: {"worker": "mediaminer1", "jsonrpc": "2.0", "params": ["0xEa2b941B32da24B4Fa99ef2578d1DF50C26dA523", "x"], "id": 2, "method": "eth_submitLogin"}
+
+14:16:40:399	2020	ETH: Stratum - Connected (ubiq.hodlpool.com:8009)
+14:16:40:474	2020	got 39 bytes
+14:16:40:477	2020	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+14:16:40:480	2020	parse packet: 38
+14:16:40:485	2020	ETH: Authorized
+14:16:40:487	2020	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+14:16:40:490	2020	new buf size: 0
+14:16:40:563	2020	got 237 bytes
+14:16:40:567	2020	buf: {"id":3,"jsonrpc":"2.0","result":["0x9b94fe4610eda9a93ae9140c15741aaf8109b792cccf1af21a03a3b77dc57078","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+14:16:40:571	2020	parse packet: 236
+14:16:40:575	2020	ETH: job changed
+14:16:40:578	2020	new buf size: 0
+14:16:40:666	1958	Setting DAG epoch #11...
+14:16:41:606	1958	Setting DAG epoch #11 for GPU0
+14:16:41:609	1958	Create GPU buffer for GPU0
+14:16:44:532	1958	GPU0 DAG creation time - 2830 ms
+14:16:44:536	1958	Setting DAG epoch #11 for GPU0 done
+14:16:50:587	2020	ETH: checking pool connection...
+14:16:50:590	2020	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+14:16:50:661	2020	got 237 bytes
+14:16:50:678	2020	buf: {"id":3,"jsonrpc":"2.0","result":["0x9b94fe4610eda9a93ae9140c15741aaf8109b792cccf1af21a03a3b77dc57078","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+14:16:50:692	2020	parse packet: 236
+14:16:50:696	2020	ETH: job is the same
+14:16:50:702	2020	new buf size: 0
+14:17:00:587	2020	send: {"id":6,"worker":"mediaminer1","jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf4b920", "0x00000000000000000000000000000000000000000000000000000000eedb1047"]}
+
+14:17:00:602	2020	ETH: checking pool connection...
+14:17:00:605	2020	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+14:17:00:664	2020	got 39 bytes
+14:17:00:668	2020	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+14:17:00:671	2020	parse packet: 38
+14:17:00:674	2020	new buf size: 0
+14:17:00:731	2020	got 237 bytes
+14:17:00:736	2020	buf: {"id":3,"jsonrpc":"2.0","result":["0x9b94fe4610eda9a93ae9140c15741aaf8109b792cccf1af21a03a3b77dc57078","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+14:17:00:741	2020	parse packet: 236
+14:17:00:746	2020	ETH: job is the same
+14:17:00:750	2020	new buf size: 0
+14:17:05:912	1bbc	GPU0 t=69C fan=19%
+14:17:05:957	5350	em hbt: 0, fm hbt: 47, 
+14:17:05:960	5350	watchdog - thread 0 (gpu0), hb time 109
+14:17:05:964	5350	watchdog - thread 1 (gpu0), hb time 485
+14:17:10:618	2020	ETH: checking pool connection...
+14:17:10:621	2020	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+14:17:10:694	2020	got 237 bytes
+14:17:10:698	2020	buf: {"id":3,"jsonrpc":"2.0","result":["0x9b94fe4610eda9a93ae9140c15741aaf8109b792cccf1af21a03a3b77dc57078","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+14:17:10:701	2020	parse packet: 236
+14:17:10:704	2020	ETH: job is the same
+14:17:10:707	2020	new buf size: 0
+14:17:20:602	2020	send: {"id":6,"worker":"mediaminer1","jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf15d47", "0x00000000000000000000000000000000000000000000000000000000eedb1047"]}
+
+14:17:20:633	2020	ETH: checking pool connection...
+14:17:20:638	2020	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+14:17:20:676	2020	got 39 bytes
+14:17:20:680	2020	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+14:17:20:684	2020	parse packet: 38
+14:17:20:688	2020	new buf size: 0
+14:17:20:742	2020	got 237 bytes
+14:17:20:747	2020	buf: {"id":3,"jsonrpc":"2.0","result":["0x9b94fe4610eda9a93ae9140c15741aaf8109b792cccf1af21a03a3b77dc57078","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+14:17:20:750	2020	parse packet: 236
+14:17:20:753	2020	ETH: job is the same
+14:17:20:756	2020	new buf size: 0
+14:17:30:650	2020	ETH: checking pool connection...
+14:17:30:655	2020	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+14:17:30:730	2020	got 237 bytes
+14:17:30:733	2020	buf: {"id":3,"jsonrpc":"2.0","result":["0x9b94fe4610eda9a93ae9140c15741aaf8109b792cccf1af21a03a3b77dc57078","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+14:17:30:736	2020	parse packet: 236
+14:17:30:739	2020	ETH: job is the same
+14:17:30:742	2020	new buf size: 0
+14:17:35:926	1bbc	GPU0 t=70C fan=25%
+14:17:36:049	5350	em hbt: 0, fm hbt: 47, 
+14:17:36:054	5350	watchdog - thread 0 (gpu0), hb time 219
+14:17:36:058	5350	watchdog - thread 1 (gpu0), hb time 593
+14:17:39:841	2020	got 237 bytes
+14:17:39:844	2020	buf: {"id":0,"jsonrpc":"2.0","result":["0x5403f8a73efc935e9628e684a3dcf97a6baeb4cd016bd035b10cafb9fe2d353c","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+14:17:39:847	2020	parse packet: 236
+14:17:39:849	2020	ETH: job changed
+14:17:39:852	2020	new buf size: 0
+14:17:39:856	2020	ETH: 01/01/18-14:17:39 - New job from ubiq.hodlpool.com:8009
+14:17:39:859	2020	target: 0x0000000112e0be82 (diff: 4000MH), epoch 11(1.09GB)
+14:17:39:861	2020	ETH - Total Speed: 16.032 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+14:17:39:864	2020	ETH: GPU0 16.032 Mh/s
+14:17:40:618	2020	send: {"id":6,"worker":"mediaminer1","jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf4dd09", "0x00000000000000000000000000000000000000000000000000000000eedb1047"]}
+
+14:17:40:665	2020	ETH: checking pool connection...
+14:17:40:668	2020	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+14:17:40:690	2020	got 39 bytes
+14:17:40:693	2020	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+14:17:40:696	2020	parse packet: 38
+14:17:40:698	2020	new buf size: 0
+14:17:40:756	2020	got 237 bytes
+14:17:40:759	2020	buf: {"id":3,"jsonrpc":"2.0","result":["0x5403f8a73efc935e9628e684a3dcf97a6baeb4cd016bd035b10cafb9fe2d353c","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+14:17:40:762	2020	parse packet: 236
+14:17:40:766	2020	ETH: job is the same
+14:17:40:769	2020	new buf size: 0
+14:17:50:680	2020	ETH: checking pool connection...
+14:17:50:683	2020	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+14:17:50:759	2020	got 237 bytes
+14:17:50:762	2020	buf: {"id":3,"jsonrpc":"2.0","result":["0x5403f8a73efc935e9628e684a3dcf97a6baeb4cd016bd035b10cafb9fe2d353c","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+14:17:50:766	2020	parse packet: 236
+14:17:50:770	2020	ETH: job is the same
+14:17:50:773	2020	new buf size: 0
+14:18:00:633	2020	send: {"id":6,"worker":"mediaminer1","jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf4c8fc", "0x00000000000000000000000000000000000000000000000000000000eedb1047"]}
+
+14:18:00:697	2020	ETH: checking pool connection...
+14:18:00:700	2020	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+14:18:00:705	2020	got 39 bytes
+14:18:00:708	2020	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+14:18:00:710	2020	parse packet: 38
+14:18:00:713	2020	new buf size: 0
+14:18:00:775	2020	got 237 bytes
+14:18:00:778	2020	buf: {"id":3,"jsonrpc":"2.0","result":["0x5403f8a73efc935e9628e684a3dcf97a6baeb4cd016bd035b10cafb9fe2d353c","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+14:18:00:781	2020	parse packet: 236
+14:18:00:784	2020	ETH: job is the same
+14:18:00:787	2020	new buf size: 0
+14:18:05:936	1bbc	GPU0 t=70C fan=27%
+14:18:06:142	5350	em hbt: 0, fm hbt: 94, 
+14:18:06:145	5350	watchdog - thread 0 (gpu0), hb time 344
+14:18:06:148	5350	watchdog - thread 1 (gpu0), hb time 704
+14:18:10:711	2020	ETH: checking pool connection...
+14:18:10:714	2020	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+14:18:10:785	2020	got 237 bytes
+14:18:10:788	2020	buf: {"id":3,"jsonrpc":"2.0","result":["0x5403f8a73efc935e9628e684a3dcf97a6baeb4cd016bd035b10cafb9fe2d353c","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+14:18:10:792	2020	parse packet: 236
+14:18:10:796	2020	ETH: job is the same
+14:18:10:801	2020	new buf size: 0
+14:18:20:650	2020	send: {"id":6,"worker":"mediaminer1","jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf4940a", "0x00000000000000000000000000000000000000000000000000000000eedb1047"]}
+
+14:18:20:720	2020	got 39 bytes
+14:18:20:724	2020	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+14:18:20:728	2020	parse packet: 38
+14:18:20:732	2020	new buf size: 0
+14:18:20:735	2020	ETH: checking pool connection...
+14:18:20:738	2020	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+14:18:20:810	2020	got 237 bytes
+14:18:20:813	2020	buf: {"id":3,"jsonrpc":"2.0","result":["0x5403f8a73efc935e9628e684a3dcf97a6baeb4cd016bd035b10cafb9fe2d353c","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+14:18:20:818	2020	parse packet: 236
+14:18:20:821	2020	ETH: job is the same
+14:18:20:825	2020	new buf size: 0
+14:18:30:743	2020	ETH: checking pool connection...
+14:18:30:746	2020	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+14:18:30:816	2020	got 237 bytes
+14:18:30:819	2020	buf: {"id":3,"jsonrpc":"2.0","result":["0x5403f8a73efc935e9628e684a3dcf97a6baeb4cd016bd035b10cafb9fe2d353c","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+14:18:30:822	2020	parse packet: 236
+14:18:30:826	2020	ETH: job is the same
+14:18:30:829	2020	new buf size: 0
+14:18:35:951	1bbc	GPU0 t=70C fan=27%
+14:18:36:231	5350	em hbt: 0, fm hbt: 93, 
+14:18:36:234	5350	watchdog - thread 0 (gpu0), hb time 609
+14:18:36:237	5350	watchdog - thread 1 (gpu0), hb time 250
+14:18:40:667	2020	send: {"id":6,"worker":"mediaminer1","jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xd107f5", "0x00000000000000000000000000000000000000000000000000000000eedb1047"]}
+
+14:18:40:753	2020	got 39 bytes
+14:18:40:776	2020	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+14:18:40:784	2020	parse packet: 38
+14:18:40:796	2020	new buf size: 0
+14:18:40:807	2020	ETH: checking pool connection...
+14:18:40:827	2020	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+14:18:40:914	2020	got 237 bytes
+14:18:40:925	2020	buf: {"id":3,"jsonrpc":"2.0","result":["0x5403f8a73efc935e9628e684a3dcf97a6baeb4cd016bd035b10cafb9fe2d353c","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+14:18:40:953	2020	parse packet: 236
+14:18:40:975	2020	ETH: job is the same
+14:18:40:985	2020	new buf size: 0
+14:18:50:852	2020	ETH: checking pool connection...
+14:18:50:855	2020	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+14:18:50:931	2020	got 237 bytes
+14:18:50:935	2020	buf: {"id":3,"jsonrpc":"2.0","result":["0x5403f8a73efc935e9628e684a3dcf97a6baeb4cd016bd035b10cafb9fe2d353c","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+14:18:50:938	2020	parse packet: 236
+14:18:50:941	2020	ETH: job is the same
+14:18:50:945	2020	new buf size: 0
+14:19:00:693	2020	send: {"id":6,"worker":"mediaminer1","jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xdf09ab", "0x00000000000000000000000000000000000000000000000000000000eedb1047"]}
+
+14:19:00:789	2020	got 39 bytes
+14:19:00:801	2020	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+14:19:00:816	2020	parse packet: 38
+14:19:00:833	2020	new buf size: 0
+14:19:00:883	2020	ETH: checking pool connection...
+14:19:00:900	2020	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+14:19:00:991	2020	got 237 bytes
+14:19:01:017	2020	buf: {"id":3,"jsonrpc":"2.0","result":["0x5403f8a73efc935e9628e684a3dcf97a6baeb4cd016bd035b10cafb9fe2d353c","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+14:19:01:030	2020	parse packet: 236
+14:19:01:047	2020	ETH: job is the same
+14:19:01:057	2020	new buf size: 0
+14:19:05:970	1bbc	GPU0 t=71C fan=28%
+14:19:06:321	5350	em hbt: 16, fm hbt: 78, 
+14:19:06:325	5350	watchdog - thread 0 (gpu0), hb time 656
+14:19:06:328	5350	watchdog - thread 1 (gpu0), hb time 297
+14:19:10:930	2020	ETH: checking pool connection...
+14:19:10:933	2020	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+14:19:11:004	2020	got 237 bytes
+14:19:11:007	2020	buf: {"id":3,"jsonrpc":"2.0","result":["0x5403f8a73efc935e9628e684a3dcf97a6baeb4cd016bd035b10cafb9fe2d353c","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+14:19:11:011	2020	parse packet: 236
+14:19:11:014	2020	ETH: job is the same
+14:19:11:017	2020	new buf size: 0
+14:19:20:696	2020	send: {"id":6,"worker":"mediaminer1","jsonrpc":"2.0","method":"eth_submitHashrate","params":["0xf427a4", "0x00000000000000000000000000000000000000000000000000000000eedb1047"]}
+
+14:19:20:770	2020	got 39 bytes
+14:19:20:773	2020	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+14:19:20:776	2020	parse packet: 38
+14:19:20:779	2020	new buf size: 0
+14:19:20:946	2020	ETH: checking pool connection...
+14:19:20:949	2020	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+14:19:21:023	2020	got 237 bytes
+14:19:21:026	2020	buf: {"id":3,"jsonrpc":"2.0","result":["0x5403f8a73efc935e9628e684a3dcf97a6baeb4cd016bd035b10cafb9fe2d353c","0xd705bfceb18862841d146b65702167152de74c08a4c1821a1698fcc414d8978e","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba"]}
+
+14:19:21:030	2020	parse packet: 236
+14:19:21:033	2020	ETH: job is the same
+14:19:21:036	2020	new buf size: 0
+14:19:21:279	10f4	Quit...
